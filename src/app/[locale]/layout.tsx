@@ -29,18 +29,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Hero" });
+  const heroT = await getTranslations({ locale, namespace: "Hero" });
+  const footerT = await getTranslations({ locale, namespace: "Footer" });
+
+  const title = `${SITE.name} — ${heroT("eyebrow")}`;
+  const description = footerT("tagline");
 
   return {
     metadataBase: new URL(`https://${SITE.domain}`),
     title: {
-      default: SITE.title,
+      default: title,
       template: `%s — ${SITE.name}`,
     },
-    description: SITE.description,
+    description,
     openGraph: {
-      title: SITE.title,
-      description: SITE.description,
+      title,
+      description,
       url: `https://${SITE.domain}`,
       siteName: SITE.name,
       locale: locale === "id" ? "id_ID" : "en_US",
@@ -48,8 +52,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: SITE.title,
-      description: SITE.description,
+      title,
+      description,
     },
     alternates: {
       languages: {
@@ -58,30 +62,34 @@ export async function generateMetadata({
       },
     },
     other: {
-      "hero-eyebrow": t("eyebrow"),
+      "hero-eyebrow": heroT("eyebrow"),
     },
   };
 }
 
-const personJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Budi Rissetyabudi Darma Adi",
-  alternateName: "Bani Risset",
-  jobTitle: "Konsultan Digital & AI Strategist",
-  url: `https://${SITE.domain}`,
-  email: "mailto:me@banirisset.com",
-  sameAs: ["https://linkedin.com/in/banirisset", "https://banirisset.com"],
-};
+function buildJsonLd(locale: string, jobTitle: string, description: string) {
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Budi Rissetyabudi Darma Adi",
+    alternateName: "Bani Risset",
+    jobTitle,
+    url: `https://${SITE.domain}${locale === "id" ? "" : `/${locale}`}`,
+    email: "mailto:me@banirisset.com",
+    sameAs: ["https://linkedin.com/in/banirisset", "https://banirisset.com"],
+  };
 
-const professionalServiceJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Bani Risset — Digital & AI Consulting",
-  description: SITE.description,
-  url: `https://${SITE.domain}`,
-  areaServed: "ID",
-};
+  const professionalServiceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: `${SITE.name} — ${jobTitle}`,
+    description,
+    url: `https://${SITE.domain}${locale === "id" ? "" : `/${locale}`}`,
+    areaServed: "ID",
+  };
+
+  return { personJsonLd, professionalServiceJsonLd };
+}
 
 export default async function LocaleLayout({
   children,
@@ -97,6 +105,14 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+
+  const heroT = await getTranslations({ locale, namespace: "Hero" });
+  const footerT = await getTranslations({ locale, namespace: "Footer" });
+  const { personJsonLd, professionalServiceJsonLd } = buildJsonLd(
+    locale,
+    heroT("eyebrow"),
+    footerT("tagline")
+  );
 
   return (
     <html

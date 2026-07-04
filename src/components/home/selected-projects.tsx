@@ -2,10 +2,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
-import { selectedProjects } from "@/lib/projects";
+import type { SelectedProject } from "@/lib/projects";
 
 export function SelectedProjects() {
   const t = useTranslations("SelectedProjects");
+  const selectedProjects = t.raw("items") as SelectedProject[];
 
   return (
     <section className="border-b border-border/50 px-6 py-24">

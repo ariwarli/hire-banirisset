@@ -3,7 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import { z } from "zod";
 
-const contentDir = path.join(process.cwd(), "src/content/work");
+function contentDir(locale: string) {
+  return path.join(process.cwd(), "src/content/work", locale);
+}
 
 const frontmatterSchema = z.object({
   title: z.string().min(1),
@@ -22,13 +24,14 @@ export type CaseStudy = CaseStudyFrontmatter & {
   content: string;
 };
 
-export function getAllCaseStudies(): CaseStudy[] {
-  const files = fs.readdirSync(contentDir).filter((file) => file.endsWith(".mdx"));
+export function getAllCaseStudies(locale: string): CaseStudy[] {
+  const dir = contentDir(locale);
+  const files = fs.readdirSync(dir).filter((file) => file.endsWith(".mdx"));
 
   return files
     .map((file) => {
       const slug = file.replace(/\.mdx$/, "");
-      const raw = fs.readFileSync(path.join(contentDir, file), "utf-8");
+      const raw = fs.readFileSync(path.join(dir, file), "utf-8");
       const { data, content } = matter(raw);
       const frontmatter = frontmatterSchema.parse(data);
 
@@ -37,8 +40,8 @@ export function getAllCaseStudies(): CaseStudy[] {
     .sort((a, b) => Number(b.year) - Number(a.year));
 }
 
-export function getCaseStudyBySlug(slug: string): CaseStudy | null {
-  const filePath = path.join(contentDir, `${slug}.mdx`);
+export function getCaseStudyBySlug(locale: string, slug: string): CaseStudy | null {
+  const filePath = path.join(contentDir(locale), `${slug}.mdx`);
   if (!fs.existsSync(filePath)) return null;
 
   const raw = fs.readFileSync(filePath, "utf-8");
@@ -48,8 +51,8 @@ export function getCaseStudyBySlug(slug: string): CaseStudy | null {
   return { ...frontmatter, slug, content };
 }
 
-export function getFeaturedCaseStudies(limit = 3): CaseStudy[] {
-  const all = getAllCaseStudies();
+export function getFeaturedCaseStudies(locale: string, limit = 3): CaseStudy[] {
+  const all = getAllCaseStudies(locale);
   const featured = all.filter((cs) => cs.featured);
   return (featured.length > 0 ? featured : all).slice(0, limit);
 }

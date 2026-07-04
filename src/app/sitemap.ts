@@ -6,12 +6,12 @@ import { routing } from "@/i18n/routing";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = `https://${SITE.domain}`;
   const staticPaths = ["", "/work", "/about", "/contact"];
-  const caseStudies = getAllCaseStudies();
 
   const entries: MetadataRoute.Sitemap = [];
 
   for (const locale of routing.locales) {
     const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;
+    const caseStudies = getAllCaseStudies(locale);
 
     for (const p of staticPaths) {
       entries.push({

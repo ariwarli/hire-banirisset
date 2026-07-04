@@ -10,7 +10,9 @@ export const SITE = {
   name: "Bani Risset",
   domain: "hire.banirisset.com",
   blogDomain: "https://banirisset.com",
-  title: "Bani Risset — Konsultan Digital & AI Strategist",
+  // Locale-invariant fallback — used only by manifest.ts (PWA manifests are
+  // single-language). Page <title>/description are built per-locale from
+  // messages in src/app/[locale]/layout.tsx instead.
   description:
-    "Building AI Systems, Automation & Digital Growth for Businesses and NGOs. 18 tahun / sejak 2008.",
+    "Digital & AI Consultant — Building AI Systems, Automation & Digital Growth for Businesses and NGOs. 18 years / since 2008.",
 } as const;
