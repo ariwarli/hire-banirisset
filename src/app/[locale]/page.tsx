@@ -1,4 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
+import { Hero } from "@/components/home/hero";
+import { SelectedProjects } from "@/components/home/selected-projects";
+import { Capabilities } from "@/components/home/capabilities";
+import { FeaturedCaseStudies } from "@/components/home/featured-case-studies";
+import { Timeline } from "@/components/home/timeline";
+import { ClosingCta } from "@/components/home/closing-cta";
 
 export default async function HomePage({
   params,
@@ -8,5 +14,14 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <div className="mx-auto max-w-6xl px-6 py-24">Home placeholder</div>;
+  return (
+    <>
+      <Hero />
+      <SelectedProjects />
+      <Capabilities />
+      <FeaturedCaseStudies />
+      <Timeline />
+      <ClosingCta />
+    </>
+  );
 }
