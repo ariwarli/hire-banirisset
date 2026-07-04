@@ -1,7 +1,7 @@
 export const CONTACT = {
   whatsappNumber: "6281234500333",
   whatsappUrl: "https://wa.me/6281234500333",
-  email: "me@banirisset.com",
+  email: "gmail@banirisset.com",
   linkedinUrl: "https://linkedin.com/in/banirisset",
   linkedinHandle: "in/banirisset",
 } as const;

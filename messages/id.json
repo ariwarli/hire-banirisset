@@ -17,7 +17,16 @@
     "tagline": "Building AI Systems, Automation & Digital Growth for Businesses and NGOs.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Book Consultation",
-    "eyebrow": "Konsultan Digital & AI Strategist"
+    "eyebrow": "Konsultan Digital & AI Strategist",
+    "terminal": {
+      "lines": [
+        "$ jalankan automasi-kampanye.ai",
+        "✓ audiens tersegmentasi",
+        "✓ 12 aset AI dibuat",
+        "✓ dijadwalkan ke 3 kanal",
+        "selesai dalam 4.2 detik"
+      ]
+    }
   },
   "SelectedProjects": {
     "eyebrow": "Selected Projects",
