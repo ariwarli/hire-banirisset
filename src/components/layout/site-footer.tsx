@@ -50,20 +50,6 @@ export function SiteFooter() {
           <p className="text-sm font-medium text-foreground">{t("connect")}</p>
           <nav className="mt-3 flex flex-col gap-2 text-sm text-muted-foreground">
             <a
-              href={CONTACT.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-foreground"
-            >
-              WhatsApp
-            </a>
-            <a
-              href={`mailto:${CONTACT.email}`}
-              className="transition-colors hover:text-foreground"
-            >
-              {CONTACT.email}
-            </a>
-            <a
               href={CONTACT.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
