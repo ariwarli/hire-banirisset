@@ -75,7 +75,7 @@ function buildJsonLd(locale: string, jobTitle: string, description: string) {
     alternateName: "Bani Risset",
     jobTitle,
     url: `https://${SITE.domain}${locale === "id" ? "" : `/${locale}`}`,
-    email: "mailto:me@banirisset.com",
+    email: "mailto:gmail@banirisset.com",
     sameAs: ["https://linkedin.com/in/banirisset", "https://banirisset.com"],
   };
 
