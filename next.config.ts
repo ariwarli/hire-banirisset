@@ -4,6 +4,11 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
+// Next.js dev mode relies on eval() for webpack HMR/fast refresh — without
+// 'unsafe-eval' the CSP silently blocks React from ever hydrating in dev.
+// Production builds don't need it, so this stays dev-only.
+const isDev = process.env.NODE_ENV !== "production";
+
 const securityHeaders = [
   {
     key: "X-Frame-Options",
@@ -25,11 +30,11 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline'",
+      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https:",
       "font-src 'self' data:",
-      "connect-src 'self'",
+      `connect-src 'self'${isDev ? " ws:" : ""}`,
       "frame-ancestors 'none'",
     ].join("; "),
   },
