@@ -7,9 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { FadeIn } from "@/components/fade-in";
 import { getAllCaseStudies, getCaseStudyBySlug } from "@/lib/work";
+import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
-  return getAllCaseStudies().map((cs) => ({ slug: cs.slug }));
+  return routing.locales.flatMap((locale) =>
+    getAllCaseStudies(locale).map((cs) => ({ locale, slug: cs.slug }))
+  );
 }
 
 export async function generateMetadata({
@@ -17,8 +20,8 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const cs = getCaseStudyBySlug(slug);
+  const { locale, slug } = await params;
+  const cs = getCaseStudyBySlug(locale, slug);
   if (!cs) return {};
 
   return {
@@ -40,7 +43,7 @@ export default async function CaseStudyPage({
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const cs = getCaseStudyBySlug(slug);
+  const cs = getCaseStudyBySlug(locale, slug);
   if (!cs) notFound();
 
   const t = await getTranslations("CaseStudy");

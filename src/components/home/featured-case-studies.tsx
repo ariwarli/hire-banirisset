@@ -1,12 +1,13 @@
-import { useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { Badge } from "@/components/ui/badge";
 import { getFeaturedCaseStudies } from "@/lib/work";
 
-export function FeaturedCaseStudies() {
-  const t = useTranslations("FeaturedCaseStudies");
-  const caseStudies = getFeaturedCaseStudies(3);
+export async function FeaturedCaseStudies() {
+  const locale = await getLocale();
+  const t = await getTranslations("FeaturedCaseStudies");
+  const caseStudies = getFeaturedCaseStudies(locale, 3);
 
   return (
     <section className="border-b border-border/50 px-6 py-24">

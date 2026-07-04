@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { CONTACT } from "@/lib/constants";
 
 export function MobileNav({
@@ -52,6 +53,9 @@ export function MobileNav({
               </Link>
             ))}
           </nav>
+          <div className="mt-2 px-4">
+            <LanguageSwitcher />
+          </div>
           <div className="mt-4 flex flex-col gap-2 px-4">
             <a
               href={CONTACT.whatsappUrl}

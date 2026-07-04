@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { MobileNav } from "@/components/layout/mobile-nav";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { CONTACT } from "@/lib/constants";
 
 export function SiteHeader() {
@@ -33,7 +34,9 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-4 md:flex">
+          <LanguageSwitcher />
+          <span className="h-4 w-px bg-border" aria-hidden="true" />
           <a
             href={CONTACT.whatsappUrl}
             target="_blank"

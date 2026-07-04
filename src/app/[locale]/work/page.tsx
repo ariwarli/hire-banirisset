@@ -28,7 +28,7 @@ export default async function WorkPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("WorkPage");
-  const caseStudies = getAllCaseStudies();
+  const caseStudies = getAllCaseStudies(locale);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
