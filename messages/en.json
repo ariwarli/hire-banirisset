@@ -1,0 +1,150 @@
+{
+  "Nav": {
+    "home": "Beranda",
+    "work": "Proyek",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "bookConsultation": "Book Consultation"
+  },
+  "Footer": {
+    "tagline": "Konsultan Digital & AI Strategist — 18 tahun / sejak 2008.",
+    "rights": "Seluruh hak cipta dilindungi.",
+    "quickLinks": "Tautan Cepat",
+    "connect": "Terhubung"
+  },
+  "Hero": {
+    "name": "Bani Risset",
+    "tagline": "Building AI Systems, Automation & Digital Growth for Businesses and NGOs.",
+    "ctaPrimary": "View Projects",
+    "ctaSecondary": "Book Consultation",
+    "eyebrow": "Konsultan Digital & AI Strategist"
+  },
+  "SelectedProjects": {
+    "eyebrow": "Selected Projects",
+    "title": "Proyek yang membuktikan dirinya sendiri",
+    "viewAll": "Lihat semua proyek",
+    "viewDetail": "Lihat Detail"
+  },
+  "Capabilities": {
+    "eyebrow": "Capabilities",
+    "title": "Satu partner, seluruh stack digital",
+    "items": {
+      "ai": {
+        "title": "AI & Automation",
+        "desc": "NLP chatbot, AI trainer, dan otomasi alur kerja berbasis AI untuk bisnis dan NGO."
+      },
+      "seo": {
+        "title": "SEO & Growth",
+        "desc": "Search engine optimization dan strategi pertumbuhan digital yang terukur."
+      },
+      "cloud": {
+        "title": "Cloud & Architecture",
+        "desc": "AWS, GCP, ServerAvatar — arsitektur sistem yang stabil dan siap skala."
+      },
+      "security": {
+        "title": "Keamanan",
+        "desc": "Enkripsi, audit keamanan, dan penetration testing."
+      },
+      "integration": {
+        "title": "Integrasi API",
+        "desc": "API WhatsApp, payment gateway, dan sistem login pihak ketiga."
+      },
+      "analytics": {
+        "title": "Analitik",
+        "desc": "Google Analytics dan Meta Pixel untuk keputusan berbasis data."
+      }
+    }
+  },
+  "FeaturedCaseStudies": {
+    "eyebrow": "Featured Case Studies",
+    "title": "Problem nyata, solusi terverifikasi",
+    "readCase": "Baca Case Study"
+  },
+  "Timeline": {
+    "eyebrow": "Timeline",
+    "title": "18 tahun / sejak 2008",
+    "items": {
+      "y2008": {
+        "year": "2008",
+        "title": "Internet Marketing",
+        "desc": "Memulai karier profesional di internet marketing dan periklanan digital."
+      },
+      "y2012": {
+        "year": "2012",
+        "title": "WordPress & Web Development",
+        "desc": "Membangun website dan sistem keanggotaan untuk klien individu hingga NGO."
+      },
+      "y2018": {
+        "year": "2018",
+        "title": "Digital Strategy",
+        "desc": "Merancang strategi digital lintas sektor: pemerintah, NGO, dan privat."
+      },
+      "y2023": {
+        "year": "2023",
+        "title": "AI Automation",
+        "desc": "Mengintegrasikan AI dan automation ke dalam sistem bisnis klien."
+      },
+      "y2026": {
+        "year": "2026",
+        "title": "AI Execution Systems",
+        "desc": "Membangun sistem eksekusi berbasis AI untuk pertumbuhan bisnis dan NGO."
+      }
+    }
+  },
+  "ClosingCta": {
+    "title": "Let's Build Something.",
+    "desc": "Punya proyek digital, sistem AI, atau kebutuhan transformasi digital? Mari diskusikan.",
+    "ctaPrimary": "Book Consultation",
+    "ctaSecondary": "Chat via WhatsApp"
+  },
+  "WorkPage": {
+    "eyebrow": "Work",
+    "title": "Seluruh Proyek",
+    "desc": "Case study terpilih dari 18 tahun / sejak 2008 membangun sistem digital untuk bisnis dan NGO."
+  },
+  "CaseStudy": {
+    "client": "Klien",
+    "year": "Tahun",
+    "sector": "Sektor",
+    "tools": "Tools",
+    "problem": "Problem",
+    "solution": "Solution",
+    "outcome": "Outcome",
+    "back": "Kembali ke Proyek",
+    "cta": "Diskusikan proyek serupa"
+  },
+  "AboutPage": {
+    "eyebrow": "About",
+    "title": "Bani Risset",
+    "subtitle": "Konsultan Digital & AI Strategist",
+    "experienceLabel": "18 tahun / sejak 2008",
+    "bio": "Budi Rissetyabudi Darma Adi, dikenal sebagai Bani Risset, adalah Konsultan Digital & AI Strategist dengan 18 tahun / sejak 2008 membangun sistem digital untuk bisnis dan NGO — mencakup website, LMS, WhatsApp automation, dan strategi AI. Ia adalah pendiri 5 NGO di isu kesehatan dan advokasi, serta founder 3 perusahaan bisnis dan startup.",
+    "certificationsTitle": "Sertifikasi",
+    "achievementsTitle": "Prestasi",
+    "achievements": {
+      "adsense": "Menghasilkan $2.000/bulan dari Google AdSense (2009)",
+      "kemenkes": "Membangun aplikasi kesehatan yang diadopsi Kementerian Kesehatan RI (2014) — meraih MDG's Award",
+      "ngo": "Mendirikan 5 NGO di bidang kesehatan dan advokasi",
+      "systems": "Membangun dan memelihara 100+ sistem digital per tahun",
+      "certified": "Sertifikasi resmi Google, Meta, dan PARA"
+    }
+  },
+  "ContactPage": {
+    "eyebrow": "Contact",
+    "title": "Mari Diskusikan Proyek Anda",
+    "desc": "Hubungi lewat WhatsApp untuk respons tercepat, atau isi form di bawah.",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": "Nama",
+      "emailLabel": "Email",
+      "message": "Pesan",
+      "submit": "Kirim Pesan",
+      "sending": "Mengirim...",
+      "success": "Pesan terkirim. Bani akan menghubungi Anda segera.",
+      "error": "Pesan gagal terkirim. Silakan hubungi langsung via WhatsApp di bawah.",
+      "rateLimited": "Terlalu banyak percobaan. Coba lagi dalam beberapa menit, atau hubungi via WhatsApp."
+    }
+  }
+}
