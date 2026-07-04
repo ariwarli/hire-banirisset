@@ -17,7 +17,16 @@
     "tagline": "Building AI Systems, Automation & Digital Growth for Businesses and NGOs.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Book Consultation",
-    "eyebrow": "Digital & AI Consultant"
+    "eyebrow": "Digital & AI Consultant",
+    "terminal": {
+      "lines": [
+        "$ run campaign-automation.ai",
+        "✓ audience segmented",
+        "✓ 12 AI assets generated",
+        "✓ scheduled across 3 channels",
+        "done in 4.2s"
+      ]
+    }
   },
   "SelectedProjects": {
     "eyebrow": "Selected Projects",
