@@ -10,7 +10,8 @@
     "tagline": "Digital & AI Consultant — 18 years / since 2008.",
     "rights": "All rights reserved.",
     "quickLinks": "Quick Links",
-    "connect": "Connect"
+    "connect": "Connect",
+    "ecosystem": "Ecosystem"
   },
   "Hero": {
     "name": "Bani Risset",
@@ -71,6 +72,27 @@
         "client": "Homeless World Cup, Mexico",
         "year": "[TO BE CONFIRMED BY BANI]",
         "category": "International — Media Campaign"
+      },
+      {
+        "title": "siap.help",
+        "client": "Own Product",
+        "year": "[TO BE CONFIRMED BY BANI]",
+        "category": "Own Product — Enterprise SaaS",
+        "href": "/work/siap-help"
+      },
+      {
+        "title": "MunculDiGoogle",
+        "client": "Own Product",
+        "year": "[TO BE CONFIRMED BY BANI]",
+        "category": "Own Product — SMB Service",
+        "href": "/work/munculdigoogle"
+      },
+      {
+        "title": "SentraAI",
+        "client": "Own Product",
+        "year": "[TO BE CONFIRMED BY BANI]",
+        "category": "Own Product — Consumer AI",
+        "href": "/work/sentraai"
       }
     ]
   },

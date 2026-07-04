@@ -10,7 +10,8 @@
     "tagline": "Konsultan Digital & AI Strategist — 18 tahun / sejak 2008.",
     "rights": "Seluruh hak cipta dilindungi.",
     "quickLinks": "Tautan Cepat",
-    "connect": "Terhubung"
+    "connect": "Terhubung",
+    "ecosystem": "Ekosistem"
   },
   "Hero": {
     "name": "Bani Risset",
@@ -71,6 +72,27 @@
         "client": "Homeless World Cup, Mexico",
         "year": "[KONFIRMASI BANI]",
         "category": "Internasional — Media Kampanye"
+      },
+      {
+        "title": "siap.help",
+        "client": "Produk Sendiri",
+        "year": "[KONFIRMASI BANI]",
+        "category": "Produk Sendiri — Enterprise SaaS",
+        "href": "/work/siap-help"
+      },
+      {
+        "title": "MunculDiGoogle",
+        "client": "Produk Sendiri",
+        "year": "[KONFIRMASI BANI]",
+        "category": "Produk Sendiri — Jasa UMKM",
+        "href": "/work/munculdigoogle"
+      },
+      {
+        "title": "SentraAI",
+        "client": "Produk Sendiri",
+        "year": "[KONFIRMASI BANI]",
+        "category": "Produk Sendiri — AI Consumer",
+        "href": "/work/sentraai"
       }
     ]
   },
