@@ -4,6 +4,15 @@ export const CONTACT = {
   email: "gmail@banirisset.com",
   linkedinUrl: "https://linkedin.com/in/banirisset",
   linkedinHandle: "in/banirisset",
+  instagramUrl: "https://www.instagram.com/banirisset/",
+  threadsUrl: "https://www.threads.com/@banirisset",
+  facebookUrl: "https://www.facebook.com/banirisset.id/",
+} as const;
+
+export const ECOSYSTEM = {
+  blog: { name: "Blog Bani Risset", url: "https://banirisset.com/" },
+  agency: { name: "Teras Digital Tech", url: "https://terasdigital.co.id/" },
+  shop: { name: "TerasZone", url: "https://shop.terasdigital.co.id/" },
 } as const;
 
 export const SITE = {

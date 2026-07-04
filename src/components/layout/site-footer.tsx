@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { CONTACT, SITE } from "@/lib/constants";
+import { CONTACT, ECOSYSTEM, SITE } from "@/lib/constants";
 
 export function SiteFooter() {
   const t = useTranslations("Footer");
@@ -9,7 +9,7 @@ export function SiteFooter() {
 
   return (
     <footer className="border-t border-border/50">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-4">
         <div>
           <p className="font-semibold tracking-tight">{SITE.name}</p>
           <p className="mt-2 max-w-xs text-sm text-muted-foreground">
@@ -25,13 +25,22 @@ export function SiteFooter() {
             <Link href="/" className="transition-colors hover:text-foreground">
               {nav("home")}
             </Link>
-            <Link href="/work" className="transition-colors hover:text-foreground">
+            <Link
+              href="/work"
+              className="transition-colors hover:text-foreground"
+            >
               {nav("work")}
             </Link>
-            <Link href="/about" className="transition-colors hover:text-foreground">
+            <Link
+              href="/about"
+              className="transition-colors hover:text-foreground"
+            >
               {nav("about")}
             </Link>
-            <Link href="/contact" className="transition-colors hover:text-foreground">
+            <Link
+              href="/contact"
+              className="transition-colors hover:text-foreground"
+            >
               {nav("contact")}
             </Link>
           </nav>
@@ -61,6 +70,62 @@ export function SiteFooter() {
               className="transition-colors hover:text-foreground"
             >
               LinkedIn
+            </a>
+            <a
+              href={CONTACT.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-foreground"
+            >
+              Instagram
+            </a>
+            <a
+              href={CONTACT.threadsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-foreground"
+            >
+              Threads
+            </a>
+            <a
+              href={CONTACT.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-foreground"
+            >
+              Facebook
+            </a>
+          </nav>
+        </div>
+
+        <div>
+          <p className="text-sm font-medium text-foreground">
+            {t("ecosystem")}
+          </p>
+          <nav className="mt-3 flex flex-col gap-2 text-sm text-muted-foreground">
+            <a
+              href={ECOSYSTEM.blog.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-foreground"
+            >
+              {ECOSYSTEM.blog.name}
+            </a>
+            <a
+              href={ECOSYSTEM.agency.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-foreground"
+            >
+              {ECOSYSTEM.agency.name}
+            </a>
+            <a
+              href={ECOSYSTEM.shop.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-foreground"
+            >
+              {ECOSYSTEM.shop.name}
             </a>
           </nav>
         </div>
