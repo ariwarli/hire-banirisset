@@ -18,8 +18,8 @@ export function Timeline() {
 
         <ol className="relative mt-14 border-l border-border/60 pl-8">
           {years.map((key, i) => (
-            <FadeIn key={key} delay={i * 0.08} className="mb-12 last:mb-0">
-              <li>
+            <li key={key} className="mb-12 last:mb-0">
+              <FadeIn delay={i * 0.08}>
                 <span className="absolute -left-[7px] mt-1.5 size-3.5 rounded-full border-2 border-primary bg-background" />
                 <p className="text-sm font-mono text-primary">
                   {t(`items.${key}.year`)}
@@ -30,8 +30,8 @@ export function Timeline() {
                 <p className="mt-1 max-w-xl text-sm text-muted-foreground">
                   {t(`items.${key}.desc`)}
                 </p>
-              </li>
-            </FadeIn>
+              </FadeIn>
+            </li>
           ))}
         </ol>
       </div>

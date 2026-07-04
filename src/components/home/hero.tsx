@@ -15,9 +15,11 @@ export function Hero() {
         className="pointer-events-none absolute -top-32 right-0 h-96 w-96 rounded-full bg-primary/10 blur-3xl"
       />
       <div className="mx-auto max-w-6xl">
+        {/* Position-only animation (no opacity) — an opacity:0 initial state
+            on above-the-fold text delays FCP/LCP until JS runs the reveal. */}
         <motion.p
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 8 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-sm font-medium text-primary"
         >
@@ -25,8 +27,8 @@ export function Hero() {
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 16 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl"
         >
@@ -34,8 +36,8 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 16 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-xl text-lg text-muted-foreground md:text-xl"
         >
@@ -43,8 +45,8 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 16 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-10 flex flex-wrap gap-4"
         >
