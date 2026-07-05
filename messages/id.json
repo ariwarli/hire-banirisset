@@ -202,6 +202,60 @@
       "ngo": "Mendirikan 5 NGO di bidang kesehatan dan advokasi",
       "systems": "Membangun dan memelihara 100+ sistem digital per tahun",
       "certified": "Sertifikasi resmi Google, Meta, dan PARA"
+    },
+    "notableCollabs": {
+      "title": "Tokoh yang Pernah Bekerja Sama",
+      "items": [
+        {
+          "name": "Nafsiah Mboi",
+          "title": "Menteri Kesehatan RI 2012–2014",
+          "project": "Aplikasi AIDS Digital",
+          "year": "2014",
+          "image": "/collabs/placeholder.webp"
+        },
+        {
+          "name": "Syahrini",
+          "title": "Artis & Selebritis",
+          "project": "Full Campaign Digital Marketing",
+          "year": "2016",
+          "image": "/collabs/placeholder.webp"
+        },
+        {
+          "name": "Dona Arsinta",
+          "title": "Artis & Selebritis",
+          "project": "Social Media KPAK Jakarta",
+          "year": "2017",
+          "image": "/collabs/placeholder.webp"
+        },
+        {
+          "name": "Baby Jim Aditya",
+          "title": "Artis & Selebritis",
+          "project": "Website Management",
+          "year": "2012–sekarang",
+          "image": "/collabs/placeholder.webp"
+        },
+        {
+          "name": "Jamil Azzaini",
+          "title": "Motivator & Penulis",
+          "project": "Media Campaign",
+          "year": "2020",
+          "image": "/collabs/placeholder.webp"
+        },
+        {
+          "name": "Kelly Olsen",
+          "title": "CEO Tahitian Noni",
+          "project": "BBC Academy Social Media Mentoring",
+          "year": "2018",
+          "image": "/collabs/placeholder.webp"
+        },
+        {
+          "name": "Bryan",
+          "title": "Aktifis Kesehatan (WHO)",
+          "project": "Social Media Campaign",
+          "year": "2018",
+          "image": "/collabs/placeholder.webp"
+        }
+      ]
     }
   },
   "ContactPage": {

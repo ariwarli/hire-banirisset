@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FadeIn } from "@/components/fade-in";
+import { NotableCollaborations } from "@/components/about/notable-collaborations";
 import { Badge } from "@/components/ui/badge";
 
 export async function generateMetadata({
@@ -89,6 +90,8 @@ export default async function AboutPage({
           ))}
         </ul>
       </FadeIn>
+
+      <NotableCollaborations />
     </div>
   );
 }
