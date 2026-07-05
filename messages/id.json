@@ -171,7 +171,11 @@
   "WorkPage": {
     "eyebrow": "Work",
     "title": "Seluruh Proyek",
-    "desc": "Case study terpilih dari 18 tahun / sejak 2008 membangun sistem digital untuk bisnis dan NGO."
+    "desc": "Case study terpilih dari 18 tahun / sejak 2008 membangun sistem digital untuk bisnis dan NGO.",
+    "zoneB": {
+      "title": "Semua Project",
+      "count": "{count} project"
+    }
   },
   "CaseStudy": {
     "client": "Klien",

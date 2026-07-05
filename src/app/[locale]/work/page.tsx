@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/components/ui/badge";
 import { FadeIn } from "@/components/fade-in";
+import { PortfolioSection } from "@/components/portfolio/PortfolioSection";
 import { getAllCaseStudies } from "@/lib/work";
 
 export async function generateMetadata({
@@ -63,6 +64,8 @@ export default async function WorkPage({
           </FadeIn>
         ))}
       </div>
+
+      <PortfolioSection />
     </div>
   );
 }

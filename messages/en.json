@@ -171,7 +171,11 @@
   "WorkPage": {
     "eyebrow": "Work",
     "title": "All Projects",
-    "desc": "Selected case studies from 18 years / since 2008 building digital systems for businesses and NGOs."
+    "desc": "Selected case studies from 18 years / since 2008 building digital systems for businesses and NGOs.",
+    "zoneB": {
+      "title": "All Projects",
+      "count": "{count} projects"
+    }
   },
   "CaseStudy": {
     "client": "Client",
