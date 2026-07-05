@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { AvailableBadge } from "@/components/available-badge";
 import { CONTACT } from "@/lib/constants";
 
 export function SiteHeader() {
@@ -35,6 +36,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
+          <AvailableBadge />
           <LanguageSwitcher />
           <span className="h-4 w-px bg-border" aria-hidden="true" />
           <a

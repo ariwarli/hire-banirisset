@@ -13,6 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { AvailableBadge } from "@/components/available-badge";
 import { CONTACT } from "@/lib/constants";
 
 export function MobileNav({
@@ -53,7 +54,8 @@ export function MobileNav({
               </Link>
             ))}
           </nav>
-          <div className="mt-2 px-4">
+          <div className="mt-2 flex items-center gap-3 px-4">
+            <AvailableBadge />
             <LanguageSwitcher />
           </div>
           <div className="mt-4 flex flex-col gap-2 px-4">

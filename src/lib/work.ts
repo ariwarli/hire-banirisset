@@ -15,6 +15,7 @@ const frontmatterSchema = z.object({
   tools: z.array(z.string()).min(1),
   outcome: z.string().min(1, "outcome wajib diisi — tanpa outcome konkret, case study tidak layak publish"),
   featured: z.boolean().default(false),
+  metrics: z.array(z.string()).optional(),
 });
 
 export type CaseStudyFrontmatter = z.infer<typeof frontmatterSchema>;

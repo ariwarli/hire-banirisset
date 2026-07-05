@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { HeroTerminal } from "@/components/home/hero-terminal";
+import { AvailableBadge, isAvailableForProjects } from "@/components/available-badge";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -28,6 +29,17 @@ export function Hero() {
           >
             {t("eyebrow")}
           </motion.p>
+
+          {isAvailableForProjects && (
+            <motion.div
+              initial={{ y: 8 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0.05 }}
+              className="mt-3"
+            >
+              <AvailableBadge />
+            </motion.div>
+          )}
 
           <motion.h1
             initial={{ y: 16 }}

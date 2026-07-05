@@ -58,6 +58,19 @@ export default async function WorkPage({
                 <p className="mt-1 text-sm text-muted-foreground">
                   {cs.client} — {cs.year}
                 </p>
+                {cs.metrics && cs.metrics.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {cs.metrics.map((metric) => (
+                      <Badge
+                        key={metric}
+                        variant="outline"
+                        className="border-primary/40 text-primary"
+                      >
+                        {metric}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
               </div>
               <p className="text-sm text-muted-foreground">{cs.outcome}</p>
             </Link>
