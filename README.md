@@ -8,13 +8,13 @@ Portofolio Bani Risset — Konsultan Digital & AI Strategist (18 tahun / sejak 2
 - Tailwind CSS 4 + shadcn/ui, Framer Motion
 - next-intl (ID default, `/en` disiapkan)
 - MDX case study (`src/content/work/`) via `next-mdx-remote/rsc`, frontmatter divalidasi `zod`
-- Form kontak: Server Action + Resend, rate limit in-memory, honeypot
+- Form kontak: Server Action + Mailketing, rate limit in-memory, honeypot
 
 ## Development
 
 ```bash
 npm install
-cp .env.example .env   # isi RESEND_API_KEY
+cp .env.example .env   # isi MAILKETING_API_TOKEN
 npm run dev
 ```
 
@@ -35,6 +35,6 @@ messages/             # next-intl (id.json, en.json)
 
 ## Deploy
 
-Vercel, auto-deploy dari branch `main`. Env vars wajib di Vercel dashboard: `RESEND_API_KEY`, `CONTACT_TO_EMAIL`.
+Vercel, auto-deploy dari branch `main`. Env vars wajib di Vercel dashboard: `MAILKETING_API_TOKEN`, `CONTACT_TO_EMAIL`.
 
 Dokumentasi planning & arsitektur lengkap ada di `../planning/` dan `../dev-docs/` (di luar repo git ini, project root).

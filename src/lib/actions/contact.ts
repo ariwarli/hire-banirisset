@@ -1,10 +1,18 @@
 "use server";
 
 import { headers } from "next/headers";
-import { Resend } from "resend";
 import { z } from "zod";
 import { isRateLimited } from "@/lib/rate-limit";
 import { CONTACT } from "@/lib/constants";
+
+const MAILKETING_ENDPOINT = "https://api.mailketing.co.id/api/v1/send";
+
+// Mailketing's error response schema isn't fully documented — only `status`
+// is consistently present, so that's the only field we branch on.
+type MailketingResponse = {
+  status?: string;
+  response?: string;
+};
 
 const contactSchema = z.object({
   name: z.string().trim().min(2).max(100),
@@ -50,29 +58,39 @@ export async function submitContact(
     return { status: "rate_limited" };
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
+  const apiToken = process.env.MAILKETING_API_TOKEN;
+  if (!apiToken) {
     return { status: "error" };
   }
 
   try {
-    const resend = new Resend(apiKey);
     const toEmail = process.env.CONTACT_TO_EMAIL || CONTACT.email;
 
-    // onboarding@resend.dev works without domain verification; switch to a
-    // banirisset.com sender once SPF/DKIM is configured (see .env.example).
-    await resend.emails.send({
-      from: "hire.banirisset.com <onboarding@resend.dev>",
-      to: toEmail,
-      replyTo: parsed.data.email,
+    const body = new URLSearchParams({
+      api_token: apiToken,
+      from_name: CONTACT.mailFromName,
+      from_email: CONTACT.mailFromEmail,
+      recipient: toEmail,
       subject: parsed.data.subject || `Pesan baru dari ${parsed.data.name}`,
-      text: [
+      content: [
         `Nama: ${parsed.data.name}`,
         `Email: ${parsed.data.email}`,
         "",
         parsed.data.message,
       ].join("\n"),
     });
+
+    const res = await fetch(MAILKETING_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body,
+    });
+
+    const data: MailketingResponse = await res.json().catch(() => ({}));
+
+    if (!res.ok || data.status !== "success") {
+      return { status: "error" };
+    }
 
     return { status: "success" };
   } catch {

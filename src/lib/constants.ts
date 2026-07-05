@@ -7,6 +7,10 @@ export const CONTACT = {
   instagramUrl: "https://www.instagram.com/banirisset/",
   threadsUrl: "https://www.threads.com/@banirisset",
   facebookUrl: "https://www.facebook.com/banirisset.id/",
+  // Sender identity for the contact form (Mailketing) — must be
+  // registered/verified in the Mailketing dashboard before sending works.
+  mailFromName: "Bani Risset",
+  mailFromEmail: "bani@banirisset.com",
 } as const;
 
 export const ECOSYSTEM = {
