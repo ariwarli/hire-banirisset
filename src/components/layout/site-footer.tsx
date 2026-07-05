@@ -26,16 +26,16 @@ export function SiteFooter() {
               {nav("home")}
             </Link>
             <Link
-              href="/work"
-              className="transition-colors hover:text-foreground"
-            >
-              {nav("work")}
-            </Link>
-            <Link
               href="/about"
               className="transition-colors hover:text-foreground"
             >
               {nav("about")}
+            </Link>
+            <Link
+              href="/work"
+              className="transition-colors hover:text-foreground"
+            >
+              {nav("work")}
             </Link>
             <Link
               href="/contact"

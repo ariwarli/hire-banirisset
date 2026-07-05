@@ -10,8 +10,8 @@ export function SiteHeader() {
 
   const links = [
     { href: "/", label: t("home") },
-    { href: "/work", label: t("work") },
     { href: "/about", label: t("about") },
+    { href: "/work", label: t("work") },
     { href: "/contact", label: t("contact") },
   ];
 
