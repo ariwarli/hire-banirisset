@@ -31,8 +31,8 @@ export function NotableCollaborations() {
             </div>
             <div>
               <p className="text-base font-semibold">{collab.name}</p>
-              <p className="text-sm text-muted-foreground">{collab.title}</p>
-              <p className="mt-1 text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">{collab.title}</p>
+              <p className="mt-1 text-base text-muted-foreground">
                 {collab.project} — {collab.year}
               </p>
             </div>
