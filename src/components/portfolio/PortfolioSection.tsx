@@ -13,7 +13,7 @@ export async function PortfolioSection() {
       <h2 className="text-2xl font-semibold tracking-tight text-zinc-100 md:text-3xl">
         {t("title")}
       </h2>
-      <p className="mt-2 text-sm text-zinc-500">
+      <p className="mt-2 text-base text-zinc-500">
         {t("count", { count: portfolio.length })}
       </p>
 

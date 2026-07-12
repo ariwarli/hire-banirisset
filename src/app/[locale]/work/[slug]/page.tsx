@@ -53,7 +53,7 @@ export default async function CaseStudyPage({
       <FadeIn>
         <Link
           href="/work"
-          className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          className="text-base text-muted-foreground transition-colors hover:text-foreground"
         >
           ← {t("back")}
         </Link>
@@ -65,7 +65,7 @@ export default async function CaseStudyPage({
           {cs.title}
         </h1>
 
-        <dl className="mt-6 grid grid-cols-2 gap-4 rounded-2xl border border-border/60 bg-card/50 p-6 text-sm sm:grid-cols-3">
+        <dl className="mt-6 grid grid-cols-2 gap-4 rounded-2xl border border-border/60 bg-card/50 p-6 text-base sm:grid-cols-3">
           <div>
             <dt className="text-muted-foreground">{t("client")}</dt>
             <dd className="mt-1 font-medium">{cs.client}</dd>
@@ -93,7 +93,7 @@ export default async function CaseStudyPage({
 
       <FadeIn
         delay={0.1}
-        className="prose prose-invert mt-12 max-w-none prose-headings:tracking-tight prose-a:text-primary"
+        className="prose prose-lg prose-invert mt-12 max-w-none prose-headings:tracking-tight prose-a:text-primary"
       >
         <MDXRemote source={cs.content} />
       </FadeIn>

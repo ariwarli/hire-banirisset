@@ -56,13 +56,13 @@ export function ContactForm() {
       </Button>
 
       {state.status === "success" && (
-        <p className="text-sm text-primary">{t("success")}</p>
+        <p className="text-base text-primary">{t("success")}</p>
       )}
       {state.status === "validation_error" && (
-        <p className="text-sm text-destructive">{t("error")}</p>
+        <p className="text-base text-destructive">{t("error")}</p>
       )}
       {showFallback && (
-        <div className="rounded-xl border border-destructive/30 bg-destructive/10 p-4 text-sm">
+        <div className="rounded-xl border border-destructive/30 bg-destructive/10 p-4 text-base">
           <p className="text-destructive">
             {state.status === "rate_limited" ? t("rateLimited") : t("error")}
           </p>

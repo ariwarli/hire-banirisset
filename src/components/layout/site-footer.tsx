@@ -12,16 +12,16 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-4">
         <div>
           <p className="font-semibold tracking-tight">{SITE.name}</p>
-          <p className="mt-2 max-w-xs text-sm text-muted-foreground">
+          <p className="mt-2 max-w-xs text-base text-muted-foreground">
             {t("tagline")}
           </p>
         </div>
 
         <div>
-          <p className="text-sm font-medium text-foreground">
+          <p className="text-base font-medium text-foreground">
             {t("quickLinks")}
           </p>
-          <nav className="mt-3 flex flex-col gap-2 text-sm text-muted-foreground">
+          <nav className="mt-3 flex flex-col gap-2 text-base text-muted-foreground">
             <Link href="/" className="transition-colors hover:text-foreground">
               {nav("home")}
             </Link>
@@ -47,8 +47,8 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-sm font-medium text-foreground">{t("connect")}</p>
-          <nav className="mt-3 flex flex-col gap-2 text-sm text-muted-foreground">
+          <p className="text-base font-medium text-foreground">{t("connect")}</p>
+          <nav className="mt-3 flex flex-col gap-2 text-base text-muted-foreground">
             <a
               href={CONTACT.linkedinUrl}
               target="_blank"
@@ -85,10 +85,10 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-sm font-medium text-foreground">
+          <p className="text-base font-medium text-foreground">
             {t("ecosystem")}
           </p>
-          <nav className="mt-3 flex flex-col gap-2 text-sm text-muted-foreground">
+          <nav className="mt-3 flex flex-col gap-2 text-base text-muted-foreground">
             <a
               href={ECOSYSTEM.blog.url}
               target="_blank"
@@ -116,7 +116,7 @@ export function SiteFooter() {
           </nav>
         </div>
       </div>
-      <div className="border-t border-border/50 px-6 py-6 text-center text-xs text-muted-foreground">
+      <div className="border-t border-border/50 px-6 py-6 text-center text-sm text-muted-foreground">
         © {year} {SITE.name}. {t("rights")}
       </div>
     </footer>

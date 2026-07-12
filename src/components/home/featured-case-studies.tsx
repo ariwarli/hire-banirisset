@@ -13,7 +13,7 @@ export async function FeaturedCaseStudies() {
     <section className="border-b border-border/50 px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <FadeIn>
-          <p className="text-sm font-medium text-primary">{t("eyebrow")}</p>
+          <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
           <h2 className="mt-2 max-w-xl text-3xl font-semibold tracking-tight md:text-4xl">
             {t("title")}
           </h2>
@@ -33,14 +33,14 @@ export async function FeaturedCaseStudies() {
                   <h3 className="text-xl font-semibold tracking-tight">
                     {cs.title}
                   </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">
+                  <p className="mt-1 text-base text-muted-foreground">
                     {cs.client} — {cs.year}
                   </p>
-                  <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+                  <p className="mt-3 max-w-2xl text-base text-muted-foreground">
                     {cs.outcome}
                   </p>
                 </div>
-                <span className="shrink-0 text-sm font-medium text-primary transition-transform group-hover:translate-x-1">
+                <span className="shrink-0 text-base font-medium text-primary transition-transform group-hover:translate-x-1">
                   {t("readCase")} →
                 </span>
               </Link>

@@ -46,7 +46,7 @@ export default async function AboutPage({
   return (
     <div className="mx-auto max-w-3xl px-6 py-24">
       <FadeIn>
-        <p className="text-sm font-medium text-primary">{t("eyebrow")}</p>
+        <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
         <h1 className="mt-2 text-4xl font-semibold tracking-tight md:text-5xl">
           {t("title")}
         </h1>
@@ -67,7 +67,7 @@ export default async function AboutPage({
           {achievementKeys.map((key) => (
             <li
               key={key}
-              className="rounded-xl border border-border/60 bg-card/50 p-4 text-sm text-muted-foreground"
+              className="rounded-xl border border-border/60 bg-card/50 p-4 text-base text-muted-foreground"
             >
               {t(`achievements.${key}`)}
             </li>
@@ -83,7 +83,7 @@ export default async function AboutPage({
           {certifications.map((cert) => (
             <li
               key={cert}
-              className="rounded-xl border border-border/60 bg-card/50 p-4 text-sm text-muted-foreground"
+              className="rounded-xl border border-border/60 bg-card/50 p-4 text-base text-muted-foreground"
             >
               {cert}
             </li>

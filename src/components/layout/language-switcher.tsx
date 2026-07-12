@@ -15,7 +15,7 @@ export function LanguageSwitcher() {
   const activeLocale = useLocale();
 
   return (
-    <nav aria-label="Switch language" className="flex items-center gap-1 text-sm">
+    <nav aria-label="Switch language" className="flex items-center gap-1 text-base">
       {routing.locales.map((locale, i) => (
         <span key={locale} className="flex items-center gap-1">
           <Link

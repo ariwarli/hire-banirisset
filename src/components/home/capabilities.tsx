@@ -19,7 +19,7 @@ export function Capabilities() {
     <section className="border-b border-border/50 px-6 py-24">
       <div className="mx-auto max-w-6xl">
         <FadeIn>
-          <p className="text-sm font-medium text-primary">{t("eyebrow")}</p>
+          <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
           <h2 className="mt-2 max-w-xl text-3xl font-semibold tracking-tight md:text-4xl">
             {t("title")}
           </h2>
@@ -32,7 +32,7 @@ export function Capabilities() {
                 <h3 className="text-lg font-semibold tracking-tight">
                   {t(`items.${key}.title`)}
                 </h3>
-                <p className="mt-3 text-sm text-muted-foreground">
+                <p className="mt-3 text-base text-muted-foreground">
                   {t(`items.${key}.desc`)}
                 </p>
               </div>

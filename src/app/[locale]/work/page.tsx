@@ -34,7 +34,7 @@ export default async function WorkPage({
   return (
     <div className="mx-auto max-w-6xl px-6 py-24">
       <FadeIn>
-        <p className="text-sm font-medium text-primary">{t("eyebrow")}</p>
+        <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
         <h1 className="mt-2 text-4xl font-semibold tracking-tight md:text-5xl">
           {t("title")}
         </h1>
@@ -55,7 +55,7 @@ export default async function WorkPage({
                 <h2 className="text-xl font-semibold tracking-tight">
                   {cs.title}
                 </h2>
-                <p className="mt-1 text-sm text-muted-foreground">
+                <p className="mt-1 text-base text-muted-foreground">
                   {cs.client} — {cs.year}
                 </p>
                 {cs.metrics && cs.metrics.length > 0 && (
@@ -72,7 +72,7 @@ export default async function WorkPage({
                   </div>
                 )}
               </div>
-              <p className="text-sm text-muted-foreground">{cs.outcome}</p>
+              <p className="text-base text-muted-foreground">{cs.outcome}</p>
             </Link>
           </FadeIn>
         ))}

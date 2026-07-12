@@ -10,7 +10,7 @@ export function Timeline() {
     <section className="border-b border-border/50 px-6 py-24">
       <div className="mx-auto max-w-4xl">
         <FadeIn>
-          <p className="text-sm font-medium text-primary">{t("eyebrow")}</p>
+          <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
           <h2 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
             {t("title")}
           </h2>
@@ -21,13 +21,13 @@ export function Timeline() {
             <li key={key} className="mb-12 last:mb-0">
               <FadeIn delay={i * 0.08}>
                 <span className="absolute -left-[7px] mt-1.5 size-3.5 rounded-full border-2 border-primary bg-background" />
-                <p className="text-sm font-mono text-primary">
+                <p className="text-base font-mono text-primary">
                   {t(`items.${key}.year`)}
                 </p>
                 <h3 className="mt-1 text-lg font-semibold tracking-tight">
                   {t(`items.${key}.title`)}
                 </h3>
-                <p className="mt-1 max-w-xl text-sm text-muted-foreground">
+                <p className="mt-1 max-w-xl text-base text-muted-foreground">
                   {t(`items.${key}.desc`)}
                 </p>
               </FadeIn>

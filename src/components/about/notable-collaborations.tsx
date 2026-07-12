@@ -30,9 +30,9 @@ export function NotableCollaborations() {
               />
             </div>
             <div>
-              <p className="text-sm font-semibold">{collab.name}</p>
-              <p className="text-xs text-muted-foreground">{collab.title}</p>
-              <p className="mt-1 text-xs text-muted-foreground">
+              <p className="text-base font-semibold">{collab.name}</p>
+              <p className="text-sm text-muted-foreground">{collab.title}</p>
+              <p className="mt-1 text-sm text-muted-foreground">
                 {collab.project} — {collab.year}
               </p>
             </div>

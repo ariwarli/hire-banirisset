@@ -25,7 +25,7 @@ export function Hero() {
             initial={{ y: 8 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-sm font-medium text-primary"
+            className="text-base font-medium text-primary"
           >
             {t("eyebrow")}
           </motion.p>

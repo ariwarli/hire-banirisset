@@ -23,7 +23,7 @@ export function SiteHeader() {
           Bani Risset
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
+        <nav className="hidden items-center gap-8 text-base text-muted-foreground md:flex">
           {links.map((link) => (
             <Link
               key={link.href}

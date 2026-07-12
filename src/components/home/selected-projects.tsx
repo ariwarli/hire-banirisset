@@ -13,14 +13,14 @@ export function SelectedProjects() {
       <div className="mx-auto max-w-6xl">
         <FadeIn className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-medium text-primary">{t("eyebrow")}</p>
+            <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
             <h2 className="mt-2 max-w-xl text-3xl font-semibold tracking-tight md:text-4xl">
               {t("title")}
             </h2>
           </div>
           <Link
             href="/work"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             {t("viewAll")} →
           </Link>
@@ -32,17 +32,17 @@ export function SelectedProjects() {
               <Card className="h-full border-border/60 bg-card/50 transition-colors hover:border-primary/40">
                 <CardContent className="flex h-full flex-col justify-between gap-6 p-6">
                   <div>
-                    <p className="text-xs uppercase tracking-wide text-muted-foreground">
+                    <p className="text-sm uppercase tracking-wide text-muted-foreground">
                       {project.category}
                     </p>
                     <h3 className="mt-3 text-lg font-semibold tracking-tight">
                       {project.title}
                     </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
+                    <p className="mt-1 text-base text-muted-foreground">
                       {project.client}
                     </p>
                   </div>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <div className="flex items-center justify-between text-base text-muted-foreground">
                     <span>{project.year}</span>
                     {project.href && (
                       <span className="text-primary">{t("viewDetail")} →</span>

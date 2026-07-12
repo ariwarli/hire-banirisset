@@ -11,7 +11,7 @@ interface PortfolioTableProps {
 export function PortfolioTable({ label, items, locale }: PortfolioTableProps) {
   return (
     <div className="mt-10 first:mt-0">
-      <h3 className="border-b border-zinc-800 pb-2 text-xs font-medium uppercase tracking-widest text-zinc-500">
+      <h3 className="border-b border-zinc-800 pb-2 text-base font-medium uppercase tracking-widest text-zinc-500">
         {label}
       </h3>
       <div>
@@ -56,8 +56,8 @@ function PortfolioRow({ item, locale }: { item: PortfolioItem; locale: string })
     <div className="border-b border-zinc-800 py-3 last:border-b-0 hover:bg-zinc-900/50 md:grid md:grid-cols-[1fr_auto_1fr_auto] md:items-center md:gap-6 md:py-2.5">
       {/* Desktop: 4 kolom */}
       <span className="hidden font-medium text-zinc-100 md:block">{client}</span>
-      <span className="hidden text-sm text-zinc-500 md:block">{item.year}</span>
-      <span className="hidden text-sm text-zinc-400 md:block">{metric}</span>
+      <span className="hidden text-base text-zinc-500 md:block">{item.year}</span>
+      <span className="hidden text-base text-zinc-400 md:block">{metric}</span>
       <span className="hidden md:block">{symbols}</span>
 
       {/* Mobile: 2 baris */}
@@ -66,9 +66,9 @@ function PortfolioRow({ item, locale }: { item: PortfolioItem; locale: string })
           {client}
           {symbols}
         </span>
-        <span className="shrink-0 text-sm text-zinc-500">{item.year}</span>
+        <span className="shrink-0 text-base text-zinc-500">{item.year}</span>
       </div>
-      <p className="mt-1 text-sm text-zinc-400 md:hidden">{metric}</p>
+      <p className="mt-1 text-base text-zinc-400 md:hidden">{metric}</p>
     </div>
   );
 }
