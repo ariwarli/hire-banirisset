@@ -128,7 +128,9 @@
   .hairline-b { border-bottom: 1px solid var(--border); }
 }
 
-/* ── motion — both decorative, so opt-in only ── */
+/* ── motion — always on (client request: was gated behind
+   prefers-reduced-motion, but that silently disabled it on multiple
+   browsers during review) ── */
 @keyframes om-pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.35; }
@@ -137,14 +139,8 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-@media (prefers-reduced-motion: no-preference) {
-  .anim-pulse { animation: om-pulse 2.6s ease-in-out infinite; }
-  .anim-ticker { animation: om-slide 26s linear infinite; }
-  @media (max-width: 767px) {
-    .anim-ticker { animation-duration: 30s; }
-  }
-}
-/* reduced motion: ticker becomes a static, swipeable row */
-@media (prefers-reduced-motion: reduce) {
-  .ticker-viewport { overflow-x: auto; }
+.anim-pulse { animation: om-pulse 2.6s ease-in-out infinite; }
+.anim-ticker { animation: om-slide 26s linear infinite; }
+@media (max-width: 767px) {
+  .anim-ticker { animation-duration: 30s; }
 }
