@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
-import { Badge } from "@/components/ui/badge";
-import { FadeIn } from "@/components/fade-in";
+import { PageHeader } from "@/components/page-header";
 import { PortfolioSection } from "@/components/portfolio/PortfolioSection";
-import { getAllCaseStudies } from "@/lib/work";
+import { portfolio } from "@/data/portfolio";
 
 export async function generateMetadata({
   params,
@@ -13,13 +11,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "WorkPage" });
-
-  return {
-    title: t("title"),
-    description: t("desc"),
-  };
+  return { title: t("title"), description: t("desc") };
 }
 
+/**
+ * The old featured-case-study card grid is gone: the tables already carry a
+ * link affordance to every case study, and the brief was to cut content.
+ */
 export default async function WorkPage({
   params,
 }: {
@@ -29,56 +27,20 @@ export default async function WorkPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("WorkPage");
-  const caseStudies = getAllCaseStudies(locale);
+  const zoneB = await getTranslations("WorkPage.zoneB");
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-24">
-      <FadeIn>
-        <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
-        <h1 className="mt-2 text-4xl font-semibold tracking-tight md:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="mt-4 max-w-xl text-muted-foreground">{t("desc")}</p>
-      </FadeIn>
-
-      <div className="mt-14 grid gap-6 md:grid-cols-2">
-        {caseStudies.map((cs, i) => (
-          <FadeIn key={cs.slug} delay={i * 0.06}>
-            <Link
-              href={`/work/${cs.slug}`}
-              className="group flex h-full flex-col justify-between gap-6 rounded-2xl border border-border/60 bg-card/50 p-7 transition-colors hover:border-primary/40"
-            >
-              <div>
-                <Badge variant="secondary" className="mb-3">
-                  {cs.sector}
-                </Badge>
-                <h2 className="text-xl font-semibold tracking-tight">
-                  {cs.title}
-                </h2>
-                <p className="mt-1 text-base text-muted-foreground">
-                  {cs.client} — {cs.year}
-                </p>
-                {cs.metrics && cs.metrics.length > 0 && (
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {cs.metrics.map((metric) => (
-                      <Badge
-                        key={metric}
-                        variant="outline"
-                        className="border-primary/40 text-primary"
-                      >
-                        {metric}
-                      </Badge>
-                    ))}
-                  </div>
-                )}
-              </div>
-              <p className="text-base text-muted-foreground">{cs.outcome}</p>
-            </Link>
-          </FadeIn>
-        ))}
-      </div>
-
+    <>
+      <PageHeader
+        eyebrow={t("eyebrow")}
+        title={t("title")}
+        lead={t("desc")}
+      >
+        <p className="pt-1 font-mono text-[11.5px] tracking-[0.1em] text-muted-foreground">
+          {zoneB("count", { count: portfolio.length }).toUpperCase()}
+        </p>
+      </PageHeader>
       <PortfolioSection />
-    </div>
+    </>
   );
 }

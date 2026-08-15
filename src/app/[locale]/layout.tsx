@@ -1,22 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Archivo, Space_Mono, Libre_Caslon_Display } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { routing } from "@/i18n/routing";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteShell } from "@/components/layout/site-shell";
 import { SITE } from "@/lib/constants";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
   subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const caslon = Libre_Caslon_Display({
+  variable: "--font-caslon",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export function generateStaticParams() {
@@ -37,10 +44,7 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(`https://${SITE.domain}`),
-    title: {
-      default: title,
-      template: `%s — ${SITE.name}`,
-    },
+    title: { default: title, template: `%s — ${SITE.name}` },
     description,
     openGraph: {
       title,
@@ -50,20 +54,9 @@ export async function generateMetadata({
       locale: locale === "id" ? "id_ID" : "en_US",
       type: "website",
     },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
-    alternates: {
-      languages: {
-        id: "/",
-        en: "/en",
-      },
-    },
-    other: {
-      "hero-eyebrow": heroT("eyebrow"),
-    },
+    twitter: { card: "summary_large_image", title, description },
+    alternates: { languages: { id: "/", en: "/en" } },
+    other: { "hero-eyebrow": heroT("eyebrow") },
   };
 }
 
@@ -94,10 +87,7 @@ function buildJsonLd(locale: string, jobTitle: string, description: string) {
 export default async function LocaleLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}>) {
+}: Readonly<{ children: React.ReactNode; params: Promise<{ locale: string }> }>) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
@@ -115,11 +105,12 @@ export default async function LocaleLayout({
   );
 
   return (
+    // NOTE: the .dark class is deliberately gone — the redesign is light-first.
     <html
       lang={locale}
-      className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${archivo.variable} ${spaceMono.variable} ${caslon.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="min-h-full">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
@@ -131,9 +122,7 @@ export default async function LocaleLayout({
           }}
         />
         <NextIntlClientProvider>
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
+          <SiteShell>{children}</SiteShell>
         </NextIntlClientProvider>
       </body>
     </html>

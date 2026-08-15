@@ -8,11 +8,14 @@
     "availableForProjects": "Available for new projects"
   },
   "Footer": {
-    "tagline": "Digital & AI Consultant — 18 years / since 2008.",
+    "tagline": "Digital & AI Consultant — since 2008.",
     "rights": "All rights reserved.",
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "ecosystem": "Ecosystem"
+  },
+  "Home": {
+    "trustedBy": "Trusted by"
   },
   "Hero": {
     "name": "Bani Risset",
@@ -134,7 +137,7 @@
   },
   "Timeline": {
     "eyebrow": "Timeline",
-    "title": "18 years / since 2008",
+    "title": "since 2008",
     "items": {
       "y2008": {
         "year": "2008",
@@ -172,7 +175,7 @@
   "WorkPage": {
     "eyebrow": "Work",
     "title": "All Projects",
-    "desc": "Selected case studies from 18 years / since 2008 building digital systems for businesses and NGOs.",
+    "desc": "Selected case studies from since 2008 building digital systems for businesses and NGOs.",
     "zoneB": {
       "title": "All Projects",
       "count": "{count} projects"
@@ -193,8 +196,8 @@
     "eyebrow": "About",
     "title": "Bani Risset",
     "subtitle": "Digital & AI Consultant",
-    "experienceLabel": "18 years / since 2008",
-    "bio": "Budi Rissetyabudi Darma Adi, known as Bani Risset, is a Digital & AI Consultant with 18 years / since 2008 building digital systems for businesses and NGOs — including websites, LMS platforms, WhatsApp automation, and AI strategy. He is the founder of 5 NGOs in health and advocacy, as well as founder of 3 businesses and startups.",
+    "experienceLabel": "since 2008",
+    "bio": "Budi Rissetyabudi Darma Adi, known as Bani Risset, is a Digital & AI Consultant with experience since 2008 building digital systems for businesses and NGOs — including websites, LMS platforms, WhatsApp automation, and AI strategy. He is the founder of 5 NGOs in health and advocacy, as well as founder of 3 businesses and startups.",
     "certificationsTitle": "Certifications",
     "achievementsTitle": "Achievements",
     "achievements": {

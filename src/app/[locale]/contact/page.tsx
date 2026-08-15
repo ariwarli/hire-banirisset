@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { FadeIn } from "@/components/fade-in";
+import { PageHeader } from "@/components/page-header";
 import { ContactForm } from "@/components/contact-form";
+import { AvailableBadge } from "@/components/available-badge";
 import { CONTACT } from "@/lib/constants";
 
 export async function generateMetadata({
@@ -11,11 +12,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "ContactPage" });
-
-  return {
-    title: t("title"),
-    description: t("desc"),
-  };
+  return { title: t("title"), description: t("desc") };
 }
 
 export default async function ContactPage({
@@ -28,49 +25,59 @@ export default async function ContactPage({
 
   const t = await getTranslations("ContactPage");
 
+  // WhatsApp first — ContactPage.desc promises it is the fastest channel.
+  const channels = [
+    {
+      label: t("whatsapp"),
+      value: `+${CONTACT.whatsappNumber}`,
+      href: CONTACT.whatsappUrl,
+      external: true,
+    },
+    {
+      label: t("email"),
+      value: CONTACT.email,
+      href: `mailto:${CONTACT.email}`,
+      external: false,
+    },
+    {
+      label: t("linkedin"),
+      value: CONTACT.linkedinHandle,
+      href: CONTACT.linkedinUrl,
+      external: true,
+    },
+  ];
+
   return (
-    <div className="mx-auto max-w-5xl px-6 py-24">
-      <FadeIn>
-        <p className="text-base font-medium text-primary">{t("eyebrow")}</p>
-        <h1 className="mt-2 text-4xl font-semibold tracking-tight md:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="mt-4 max-w-xl text-muted-foreground">{t("desc")}</p>
-      </FadeIn>
+    <>
+      <PageHeader eyebrow={t("eyebrow")} title={t("title")} lead={t("desc")} />
 
-      <div className="mt-14 grid gap-12 md:grid-cols-2">
-        <FadeIn className="flex flex-col gap-4">
-          <a
-            href={CONTACT.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-xl border border-border/60 bg-card/50 p-5 transition-colors hover:border-primary/40"
-          >
-            <p className="text-base text-muted-foreground">{t("whatsapp")}</p>
-            <p className="mt-1 font-medium">+{CONTACT.whatsappNumber}</p>
-          </a>
-          <a
-            href={`mailto:${CONTACT.email}`}
-            className="rounded-xl border border-border/60 bg-card/50 p-5 transition-colors hover:border-primary/40"
-          >
-            <p className="text-base text-muted-foreground">{t("email")}</p>
-            <p className="mt-1 font-medium">{CONTACT.email}</p>
-          </a>
-          <a
-            href={CONTACT.linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-xl border border-border/60 bg-card/50 p-5 transition-colors hover:border-primary/40"
-          >
-            <p className="text-base text-muted-foreground">{t("linkedin")}</p>
-            <p className="mt-1 font-medium">{CONTACT.linkedinHandle}</p>
-          </a>
-        </FadeIn>
-
-        <FadeIn delay={0.1}>
+      <div className="grid items-start md:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="px-[22px] py-10 md:border-r md:border-border md:px-11 md:pb-13">
           <ContactForm />
-        </FadeIn>
+        </div>
+
+        <div className="flex flex-col px-[22px] pt-10 pb-13 md:pr-11 md:pl-8">
+          {channels.map((channel, i) => (
+            <a
+              key={channel.label}
+              href={channel.href}
+              target={channel.external ? "_blank" : undefined}
+              rel={channel.external ? "noopener noreferrer" : undefined}
+              className={`hairline-t flex flex-col gap-[5px] py-4 transition-colors hover:bg-paper-alt ${
+                i === channels.length - 1 ? "border-b border-border" : ""
+              }`}
+            >
+              <span className="font-mono text-[10.5px] tracking-[0.14em] uppercase text-muted-foreground">
+                {channel.label}
+              </span>
+              <span className="text-base leading-snug font-medium">
+                {channel.value}
+              </span>
+            </a>
+          ))}
+          <AvailableBadge surface="paper" className="pt-5" />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

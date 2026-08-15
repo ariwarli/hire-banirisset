@@ -27,5 +27,5 @@ export const SITE = {
   // single-language). Page <title>/description are built per-locale from
   // messages in src/app/[locale]/layout.tsx instead.
   description:
-    "Digital & AI Consultant — Building AI Systems, Automation & Digital Growth for Businesses and NGOs. 18 years / since 2008.",
+    "Digital & AI Consultant — Building AI Systems, Automation & Digital Growth for Businesses and NGOs. Since 2008.",
 } as const;

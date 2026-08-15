@@ -1,11 +1,16 @@
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/home/hero";
-import { SelectedProjects } from "@/components/home/selected-projects";
 import { Capabilities } from "@/components/home/capabilities";
-import { FeaturedCaseStudies } from "@/components/home/featured-case-studies";
-import { Timeline } from "@/components/home/timeline";
-import { ClosingCta } from "@/components/home/closing-cta";
+import { WordmarkTicker } from "@/components/home/wordmark-ticker";
 
+/**
+ * Four blocks only. SelectedProjects, FeaturedCaseStudies, Timeline and
+ * ClosingCta are removed from the homepage per the brief ("too much
+ * content"). Their message-catalog entries stay — /work still uses them.
+ * The component files can be deleted once you're sure nothing else imports
+ * them: home/selected-projects.tsx, home/featured-case-studies.tsx,
+ * home/timeline.tsx, home/closing-cta.tsx, home/hero-terminal.tsx.
+ */
 export default async function HomePage({
   params,
 }: {
@@ -17,11 +22,8 @@ export default async function HomePage({
   return (
     <>
       <Hero />
-      <SelectedProjects />
       <Capabilities />
-      <FeaturedCaseStudies />
-      <Timeline />
-      <ClosingCta />
+      <WordmarkTicker />
     </>
   );
 }

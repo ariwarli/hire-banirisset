@@ -8,11 +8,14 @@
     "availableForProjects": "Tersedia untuk proyek baru"
   },
   "Footer": {
-    "tagline": "Konsultan Digital & AI Strategist — 18 tahun / sejak 2008.",
+    "tagline": "Konsultan Digital & AI Strategist — sejak 2008.",
     "rights": "Seluruh hak cipta dilindungi.",
     "quickLinks": "Tautan Cepat",
     "connect": "Terhubung",
     "ecosystem": "Ekosistem"
+  },
+  "Home": {
+    "trustedBy": "Dipercaya oleh"
   },
   "Hero": {
     "name": "Bani Risset",
@@ -134,7 +137,7 @@
   },
   "Timeline": {
     "eyebrow": "Timeline",
-    "title": "18 tahun / sejak 2008",
+    "title": "sejak 2008",
     "items": {
       "y2008": {
         "year": "2008",
@@ -172,7 +175,7 @@
   "WorkPage": {
     "eyebrow": "Work",
     "title": "Seluruh Proyek",
-    "desc": "Case study terpilih dari 18 tahun / sejak 2008 membangun sistem digital untuk bisnis dan NGO.",
+    "desc": "Case study terpilih dari sejak 2008 membangun sistem digital untuk bisnis dan NGO.",
     "zoneB": {
       "title": "Semua Project",
       "count": "{count} project"
@@ -193,8 +196,8 @@
     "eyebrow": "About",
     "title": "Bani Risset",
     "subtitle": "Konsultan Digital & AI Strategist",
-    "experienceLabel": "18 tahun / sejak 2008",
-    "bio": "Budi Rissetyabudi Darma Adi, dikenal sebagai Bani Risset, adalah Konsultan Digital & AI Strategist dengan 18 tahun / sejak 2008 membangun sistem digital untuk bisnis dan NGO — mencakup website, LMS, WhatsApp automation, dan strategi AI. Ia adalah pendiri 5 NGO di isu kesehatan dan advokasi, serta founder 3 perusahaan bisnis dan startup.",
+    "experienceLabel": "sejak 2008",
+    "bio": "Budi Rissetyabudi Darma Adi, dikenal sebagai Bani Risset, adalah Konsultan Digital & AI Strategist dengan pengalaman sejak 2008 membangun sistem digital untuk bisnis dan NGO — mencakup website, LMS, WhatsApp automation, dan strategi AI. Ia adalah pendiri 5 NGO di isu kesehatan dan advokasi, serta founder 3 perusahaan bisnis dan startup.",
     "certificationsTitle": "Sertifikasi",
     "achievementsTitle": "Prestasi",
     "achievements": {
