@@ -25,12 +25,12 @@ export default async function ContactPage({
 
   const t = await getTranslations("ContactPage");
 
-  // WhatsApp first — ContactPage.desc promises it is the fastest channel.
+  // Telegram first — ContactPage.desc promises it is the fastest channel.
   const channels = [
     {
-      label: t("whatsapp"),
-      value: `+${CONTACT.whatsappNumber}`,
-      href: CONTACT.whatsappUrl,
+      label: t("telegram"),
+      value: CONTACT.telegramHandle,
+      href: CONTACT.telegramUrl,
       external: true,
     },
     {

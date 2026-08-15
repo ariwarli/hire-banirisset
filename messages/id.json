@@ -265,8 +265,8 @@
   "ContactPage": {
     "eyebrow": "Contact",
     "title": "Mari Diskusikan Proyek Anda",
-    "desc": "Hubungi lewat WhatsApp untuk respons tercepat, atau isi form di bawah.",
-    "whatsapp": "WhatsApp",
+    "desc": "Hubungi lewat Telegram untuk respons tercepat, atau isi form di bawah.",
+    "telegram": "Telegram",
     "email": "Email",
     "linkedin": "LinkedIn",
     "form": {
@@ -276,8 +276,8 @@
       "submit": "Kirim Pesan",
       "sending": "Mengirim...",
       "success": "Pesan terkirim. Bani akan menghubungi Anda segera.",
-      "error": "Pesan gagal terkirim. Silakan hubungi langsung via WhatsApp di bawah.",
-      "rateLimited": "Terlalu banyak percobaan. Coba lagi dalam beberapa menit, atau hubungi via WhatsApp."
+      "error": "Pesan gagal terkirim. Silakan hubungi langsung via Telegram di bawah.",
+      "rateLimited": "Terlalu banyak percobaan. Coba lagi dalam beberapa menit, atau hubungi via Telegram."
     }
   }
 }

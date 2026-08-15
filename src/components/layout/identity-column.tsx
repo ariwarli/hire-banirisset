@@ -78,8 +78,8 @@ export function IdentityColumn() {
 
         <nav className="flex gap-[18px] pt-3.5 font-mono text-[11.5px] tracking-[0.08em] text-paper/60">
           <a href={CONTACT.linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-paper">{"LinkedIn"}</a>
-          <a href={CONTACT.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:text-paper">{"Instagram"}</a>
           <a href={CONTACT.threadsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-paper">{"Threads"}</a>
+          <a href={CONTACT.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:text-paper">{"Instagram"}</a>
         </nav>
 
         <div className="mt-1 flex flex-col gap-2.5 border-t border-paper/15 pt-5">

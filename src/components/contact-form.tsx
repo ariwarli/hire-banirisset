@@ -97,12 +97,12 @@ export function ContactForm() {
             {state.status === "rate_limited" ? t("rateLimited") : t("error")}
           </p>
           <a
-            href={CONTACT.whatsappUrl}
+            href={CONTACT.telegramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 inline-block font-medium underline underline-offset-4"
           >
-            WhatsApp: {CONTACT.whatsappNumber}
+            Telegram: {CONTACT.telegramHandle}
           </a>
         </div>
       ) : null}

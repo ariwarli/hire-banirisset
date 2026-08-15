@@ -265,8 +265,8 @@
   "ContactPage": {
     "eyebrow": "Contact",
     "title": "Let's Discuss Your Project",
-    "desc": "Reach out via WhatsApp for the fastest response, or fill out the form below.",
-    "whatsapp": "WhatsApp",
+    "desc": "Reach out via Telegram for the fastest response, or fill out the form below.",
+    "telegram": "Telegram",
     "email": "Email",
     "linkedin": "LinkedIn",
     "form": {
@@ -276,8 +276,8 @@
       "submit": "Send Message",
       "sending": "Sending...",
       "success": "Message sent. Bani will get back to you shortly.",
-      "error": "Message failed to send. Please contact directly via WhatsApp below.",
-      "rateLimited": "Too many attempts. Try again in a few minutes, or reach out via WhatsApp."
+      "error": "Message failed to send. Please contact directly via Telegram below.",
+      "rateLimited": "Too many attempts. Try again in a few minutes, or reach out via Telegram."
     }
   }
 }
