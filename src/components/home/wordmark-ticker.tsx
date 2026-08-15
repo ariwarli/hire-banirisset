@@ -11,12 +11,18 @@ import { useTranslations } from "next-intl";
  */
 const WORDMARKS = [
   "Kemenkes RI",
-  "Kemdikbud",
-  "GWL-INA",
-  "Indonesian AIDS Coalition",
-  "KPAK Jakarta",
+  "CCM",
+  "WHRIN",
+  "Rumah Cemara",
   "BBC Academy",
+  "KPAN",
+  "LBH APIK",
   "Homeless World Cup",
+  "Gue Tau",
+  "Lolipop",
+  "Its Me Lasagna",
+  "Baby Jim Aditya",
+  "Rutgers",
 ];
 
 export function WordmarkTicker() {
