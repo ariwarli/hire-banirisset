@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { CaseStudyFigure } from "@/components/case-study-figure";
+import { CaseStudyImages } from "@/components/work/case-study-images";
 import { SiteFooter } from "@/components/layout/site-footer";
 import {
   getAllCaseStudies,
@@ -174,7 +175,35 @@ export default async function CaseStudyPage({
                   className="pt-2.5"
                 />
               ) : null}
+
+              {/* Third-party citations proving the Outcome claims. */}
+              {/^(outcome|hasil)$/i.test(section.heading) && cs.sources && cs.sources.length > 0 ? (
+                <ul className="flex flex-col gap-2 pt-1">
+                  {cs.sources.map((source) => (
+                    <li key={source.url}>
+                      <a
+                        href={source.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-[11.5px] tracking-[0.1em] text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {source.label.toUpperCase()} {"↗"}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
+
+            {/* Solution screenshots — full column width, not capped at 66ch.
+                Guarded on images.length too: an empty extra grid row still
+                eats the parent's row gap, leaving a blank strip. */}
+            {/^(solution|solusi)$/i.test(section.heading) && cs.images && cs.images.length > 0 ? (
+              <>
+                <div className="hidden md:block" />
+                <CaseStudyImages images={cs.images} />
+              </>
+            ) : null}
           </div>
         ))}
 

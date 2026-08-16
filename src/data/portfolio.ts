@@ -34,15 +34,18 @@ const websiteApp: PortfolioItem[] = [
     featured: true,
     slug: 'kemenkes-aids-digital',
   },
-  {
-    client: 'GWL-INA',
-    category: 'website-app',
-    year: '2019',
-    metric: 'Platform voting digital 10K+ partisipan',
-    metricEn: 'Digital voting platform, 10K+ participants',
-    featured: true,
-    slug: 'gwl-ina-voting',
-  },
+  // Hidden for now — GWL-INA (client, year: 2019, "Platform voting digital
+  // 10K+ partisipan", slug: gwl-ina-voting). Restore by uncommenting this
+  // entry and renaming the .mdx.hidden files back to .mdx.
+  // {
+  //   client: 'GWL-INA',
+  //   category: 'website-app',
+  //   year: '2019',
+  //   metric: 'Platform voting digital 10K+ partisipan',
+  //   metricEn: 'Digital voting platform, 10K+ participants',
+  //   featured: true,
+  //   slug: 'gwl-ina-voting',
+  // },
   {
     client: 'siap.help',
     category: 'website-app',
