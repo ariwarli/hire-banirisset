@@ -28,9 +28,9 @@ const websiteApp: PortfolioItem[] = [
     client: 'Kemenkes RI — AIDS Digital',
     clientEn: 'Ministry of Health RI — AIDS Digital',
     category: 'website-app',
-    year: '2014',
-    metric: '50K+ pengguna aktif terdaftar',
-    metricEn: '50K+ registered active users',
+    year: '2013',
+    metric: 'Diadopsi secara resmi oleh Kementerian Kesehatan RI',
+    metricEn: 'Officially adopted by the Ministry of Health RI',
     featured: true,
     slug: 'kemenkes-aids-digital',
   },
@@ -77,8 +77,8 @@ const websiteApp: PortfolioItem[] = [
     client: 'Baby Jim Aditya',
     category: 'website-app',
     year: '2012–sekarang',
-    metric: 'Website artis aktif >12 tahun',
-    metricEn: 'Artist website, active 12+ years',
+    metric: 'Pengembangan & pemeliharaan website',
+    metricEn: 'Website development & maintenance',
   },
   // [KONFIRMASI BANI] — tambah project website lain di sini
   // Contoh format:
