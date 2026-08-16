@@ -26,6 +26,14 @@ const frontmatterSchema = z.object({
   proofCaption: z.string().optional(),
   /** External asset gallery (e.g. Playbook) — renders a small text link. */
   assetsUrl: z.string().url().optional(),
+  /** Third-party press/citations proving the Outcome claims — rendered as
+   *  small links inside the Outcome section. */
+  sources: z.array(z.object({ label: z.string().min(1), url: z.string().url() })).optional(),
+  /** Screenshots shown inside Solution, after its paragraph. Max 2 — see
+   *  case-study-images.tsx for the layout rules per count/orientation. */
+  images: z
+    .array(z.object({ src: z.string().min(1), alt: z.string().min(1), caption: z.string().optional() }))
+    .optional(),
 });
 
 export type CaseStudyFrontmatter = z.infer<typeof frontmatterSchema>;
