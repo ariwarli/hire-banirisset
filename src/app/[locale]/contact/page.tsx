@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageHeader } from "@/components/page-header";
 import { ContactForm } from "@/components/contact-form";
 import { AvailableBadge } from "@/components/available-badge";
+import { SiteFooter } from "@/components/layout/site-footer";
 import { CONTACT } from "@/lib/constants";
 
 export async function generateMetadata({
@@ -26,6 +27,8 @@ export default async function ContactPage({
   const t = await getTranslations("ContactPage");
 
   // Telegram first — ContactPage.desc promises it is the fastest channel.
+  // LinkedIn isn't repeated here — it's already in the sidebar (desktop) and
+  // the footer's social row (mobile).
   const channels = [
     {
       label: t("telegram"),
@@ -38,12 +41,6 @@ export default async function ContactPage({
       value: CONTACT.email,
       href: `mailto:${CONTACT.email}`,
       external: false,
-    },
-    {
-      label: t("linkedin"),
-      value: CONTACT.linkedinHandle,
-      href: CONTACT.linkedinUrl,
-      external: true,
     },
   ];
 
@@ -78,6 +75,8 @@ export default async function ContactPage({
           <AvailableBadge surface="paper" className="pt-5" />
         </div>
       </div>
+
+      <SiteFooter variant="minimal" />
     </>
   );
 }

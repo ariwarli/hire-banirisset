@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageHeader } from "@/components/page-header";
-import { NotableCollaborations } from "@/components/about/notable-collaborations";
+import { Testimonials } from "@/components/about/testimonials";
+import { SiteFooter } from "@/components/layout/site-footer";
 
 export async function generateMetadata({
   params,
@@ -13,7 +14,7 @@ export async function generateMetadata({
   return { title: t("title"), description: t("bio") };
 }
 
-const achievementKeys = ["adsense", "kemenkes", "ngo", "systems", "certified"] as const;
+const achievementKeys = ["adsense", "kemenkes", "mdgAward", "ngo", "systems", "certified"] as const;
 
 /**
  * The certifications list is intentionally NOT rendered: the fifth
@@ -45,7 +46,7 @@ export default async function AboutPage({
       </PageHeader>
 
       <div className="hairline-b px-[22px] py-10 md:px-11">
-        <p className="max-w-[72ch] text-[17.5px] leading-[1.75] text-pretty">
+        <p className="max-w-[72ch] whitespace-pre-line text-[17.5px] leading-[1.75] text-pretty">
           {t("bio")}
         </p>
       </div>
@@ -72,7 +73,8 @@ export default async function AboutPage({
         </ul>
       </div>
 
-      <NotableCollaborations />
+      <Testimonials />
+      <SiteFooter />
     </>
   );
 }

@@ -100,7 +100,7 @@ export function IdentityColumn() {
         </div>
 
         <p className="pt-3.5 font-mono text-[11px] text-paper/55">
-          {"© 2026 Bani Risset"}
+          {footer("copyright")}
         </p>
       </div>
     </div>

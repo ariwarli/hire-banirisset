@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageHeader } from "@/components/page-header";
 import { PortfolioSection } from "@/components/portfolio/PortfolioSection";
+import { SiteFooter } from "@/components/layout/site-footer";
 import { portfolio } from "@/data/portfolio";
 
 export async function generateMetadata({
@@ -41,6 +42,7 @@ export default async function WorkPage({
         </p>
       </PageHeader>
       <PortfolioSection />
+      <SiteFooter />
     </>
   );
 }

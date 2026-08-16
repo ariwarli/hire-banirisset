@@ -5,14 +5,23 @@
     "about": "Tentang",
     "contact": "Kontak",
     "bookConsultation": "Book Consultation",
-    "availableForProjects": "Tersedia untuk proyek baru"
+    "availableForProjects": "Terbuka untuk kolaborasi baru"
   },
   "Footer": {
     "tagline": "Konsultan Digital & AI Strategist — sejak 2008.",
     "rights": "Seluruh hak cipta dilindungi.",
     "quickLinks": "Tautan Cepat",
     "connect": "Terhubung",
-    "ecosystem": "Ekosistem"
+    "ecosystem": "Ekosistem",
+    "ctaEyebrow": "Mari bicara",
+    "ctaTitle": "Punya proyek serupa?",
+    "ctaDesc": "Bekerja langsung dengan saya, tanpa lapisan agensi. Respons paling cepat lewat WhatsApp.",
+    "ctaPrimary": "Book Consultation",
+    "ctaWhatsapp": "WhatsApp",
+    "ctaWhatsappMessage": "Halo Bani, saya punya proyek serupa yang ingin didiskusikan.",
+    "copyright": "© 2008 – 2026 Bani Risset",
+    "backToTop": "Kembali ke atas ↑",
+    "nextCaseStudy": "Case Study Berikutnya"
   },
   "Home": {
     "trustedBy": "Dipercaya oleh"
@@ -168,7 +177,7 @@
   },
   "ClosingCta": {
     "title": "Let's Build Something.",
-    "desc": "Sedang merencanakan proyek digital, kebutuhan implementasi AI, atau rencana transformasi digital? Mari diskusikan kebutuhan dan solusinya.",
+    "desc": "Sedang merencanakan proyek digital, kebutuhan implementasi AI, atau rencana transformasi digital?\n\nMari kita diskusikan kebutuhan dan solusinya.",
     "ctaPrimary": "Book Consultation",
     "ctaSecondary": "Chat via WhatsApp"
   },
@@ -197,69 +206,19 @@
     "title": "Bani Risset",
     "subtitle": "Konsultan Digital & AI Strategist",
     "experienceLabel": "sejak 2008",
-    "bio": "Konsultan Digital & AI Strategist dengan pengalaman sejak 2008 dalam membangun dan mengembangkan sistem digital untuk bisnis dan NGO di Indonesia, Thailand, Australia, dan Singapura. Pengalaman mencakup website, SEO, LMS, WhatsApp automation, digital marketing, hingga strategi, tools, dan implementasi AI. Memiliki pengalaman di bidang kesehatan dan advokasi melalui berbagai NGO, serta merupakan pendiri 3 perusahaan dan startup.",
+    "bio": "Konsultan Digital & AI Strategist dengan pengalaman sejak 2008 dalam membangun dan mengembangkan sistem digital untuk bisnis dan NGO di Indonesia, Thailand, Australia, dan Singapura.\n\nPengalaman mencakup website, SEO, LMS, WhatsApp automation, digital marketing, hingga strategi, tools, dan implementasi AI.\n\nMemiliki pengalaman di bidang kesehatan dan advokasi melalui berbagai NGO, serta merupakan pendiri 3 perusahaan dan startup.",
     "certificationsTitle": "Sertifikasi",
     "achievementsTitle": "Pengalaman & Pencapaian",
     "achievements": {
       "adsense": "18+ tahun berpengalaman di bidang digital, teknologi, dan sistem informasi",
-      "kemenkes": "Membangun Aplikasi AIDS Digital yang diadopsi Kementerian Kesehatan RI — meraih MDG Award",
+      "kemenkes": "Membangun Aplikasi AIDS Digital yang diadopsi Kementerian Kesehatan RI",
+      "mdgAward": "Meraih MDG Award untuk kategori Inovasi Kesehatan menggunakan Social Media",
       "ngo": "Membangun website, LMS, aplikasi, dan sistem digital untuk pemerintah, NGO, korporasi, dan UMKM",
       "systems": "Berpengalaman dalam digital marketing, social media, AI, automation, dan knowledge management",
-      "certified": "Sertifikasi resmi Google, Meta, dan AI"
+      "certified": "Memiliki sertifikasi resmi dari Google, Meta, dan bidang AI"
     },
-    "notableCollabs": {
-      "title": "Tokoh yang Pernah Bekerja Sama",
-      "items": [
-        {
-          "name": "Nafsiah Mboi",
-          "title": "Menteri Kesehatan RI 2012–2014",
-          "project": "Aplikasi AIDS Digital",
-          "year": "2014",
-          "image": "/collabs/placeholder.webp"
-        },
-        {
-          "name": "Syahrini",
-          "title": "Artis & Selebritis",
-          "project": "Full Campaign Digital Marketing",
-          "year": "2016",
-          "image": "/collabs/placeholder.webp"
-        },
-        {
-          "name": "Dona Arsinta",
-          "title": "Artis & Selebritis",
-          "project": "Social Media KPAK Jakarta",
-          "year": "2017",
-          "image": "/collabs/placeholder.webp"
-        },
-        {
-          "name": "Baby Jim Aditya",
-          "title": "Artis & Selebritis",
-          "project": "Website Management",
-          "year": "2012–sekarang",
-          "image": "/collabs/placeholder.webp"
-        },
-        {
-          "name": "Jamil Azzaini",
-          "title": "Motivator & Penulis",
-          "project": "Media Campaign",
-          "year": "2020",
-          "image": "/collabs/placeholder.webp"
-        },
-        {
-          "name": "Kelly Olsen",
-          "title": "CEO Tahitian Noni",
-          "project": "BBC Academy Social Media Mentoring",
-          "year": "2018",
-          "image": "/collabs/placeholder.webp"
-        },
-        {
-          "name": "Bryan",
-          "title": "Aktifis Kesehatan (WHO)",
-          "project": "Social Media Campaign",
-          "year": "2018",
-          "image": "/collabs/placeholder.webp"
-        }
-      ]
+    "testimonials": {
+      "title": "Apa Kata Klien"
     }
   },
   "ContactPage": {
@@ -268,7 +227,6 @@
     "desc": "Hubungi lewat Telegram untuk respons tercepat, atau isi form di bawah.",
     "telegram": "Telegram",
     "email": "Email",
-    "linkedin": "LinkedIn",
     "form": {
       "name": "Nama",
       "emailLabel": "Email",

@@ -14,7 +14,7 @@ export function Hero() {
       <h1 className="max-w-[24ch] text-[34px] leading-[1.06] tracking-[-0.02em] md:text-[52px] md:tracking-[-0.025em] text-pretty">
         {t("tagline")}
       </h1>
-      <p className="mt-6 max-w-[50ch] text-[15.5px] leading-[1.6] text-muted-foreground md:text-[17px] text-pretty">
+      <p className="mt-6 max-w-[50ch] whitespace-pre-line text-[15.5px] leading-[1.6] text-muted-foreground md:text-[17px] text-pretty">
         {cta("desc")}
       </p>
     </section>
