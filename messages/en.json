@@ -28,7 +28,6 @@
   },
   "Hero": {
     "name": "Bani Risset",
-    "tagline": "Building AI Systems, Automation & Digital Growth for Businesses and NGOs.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Book Consultation",
     "eyebrow": "Digital & AI Consultant",
@@ -40,6 +39,90 @@
         "✓ scheduled across 3 channels",
         "done in 4.2s"
       ]
+    }
+  },
+  "HomePage": {
+    "hero": {
+      "h1": "AI Strategy, Automation & Digital Transformation for Businesses and NGOs",
+      "lead": "Helping businesses and organizations find technology opportunities, build digital systems, and apply AI to real needs.",
+      "prompt": "Planning a digital project, an AI implementation need, or a digital transformation?",
+      "cta": "Book Consultation",
+      "ctaSecondary": "View Projects"
+    },
+    "capabilities": {
+      "eyebrow": "Core Capabilities",
+      "items": [
+        {
+          "no": "01",
+          "title": "AI Strategy & Automation",
+          "body": [
+            "Identifying opportunities to use AI and turning them into automation, chatbots, knowledge systems, or usable workflows."
+          ],
+          "tags": ["AI automation", "WhatsApp AI", "NLP chatbot", "Knowledge systems", "AI workflow"]
+        },
+        {
+          "no": "02",
+          "title": "Digital Transformation",
+          "body": [
+            "Connecting an organization's needs with the right strategy, process, and technology.",
+            "Covers process digitization, knowledge management, documentation, and information system development."
+          ]
+        },
+        {
+          "no": "03",
+          "title": "Custom Digital Systems",
+          "body": [
+            "Building websites, LMS, repositories, membership systems, and web applications tailored to an organization's needs.",
+            "The focus isn't just building a system. The system has to fit how people actually work and what they're trying to achieve."
+          ]
+        },
+        {
+          "no": "04",
+          "title": "Digital Visibility & Growth",
+          "body": [
+            "Helping organizations improve visibility and reach their audience through relevant digital strategy."
+          ],
+          "tags": ["SEO", "GEO/AEO", "Google Business Profile", "Social media", "Digital campaigns"]
+        },
+        {
+          "no": "05",
+          "title": "AI Training & Adoption",
+          "body": [
+            "Helping individuals and teams understand AI and use it more effectively in their work.",
+            "Material can cover AI productivity, workflow, knowledge management, and building AI-based solutions."
+          ]
+        },
+        {
+          "no": "06",
+          "title": "Digital Architecture & Integration",
+          "body": [
+            "Connecting different systems so they can work together as one ecosystem."
+          ],
+          "tags": ["API integration", "Payment gateway", "Authentication", "Analytics", "Cloud infrastructure"]
+        }
+      ]
+    },
+    "supportingPosition": {
+      "heading": "Technology is only useful when it solves the right problem.",
+      "body": [
+        "The approach starts with the need.",
+        "Process, data, technology, and implementation are then arranged to fit the organization's context."
+      ]
+    },
+    "closingCta": {
+      "heading": "Have a digital need, or want to explore using AI?",
+      "body": [
+        "Let's start with the problem.",
+        "We can talk through the need, the options, and the implementation steps that make the most sense."
+      ],
+      "primary": "Book a Consultation",
+      "consultLabel": "Initial consultation",
+      "consultValue": "30 minutes, free of charge",
+      "responseLabel": "Response",
+      "responseValue": "Usually the same business day",
+      "emailLabel": "Email",
+      "whatsappLabel": "WhatsApp",
+      "whatsappValue": "Chat directly →"
     }
   },
   "SelectedProjects": {
@@ -109,36 +192,6 @@
       }
     ]
   },
-  "Capabilities": {
-    "eyebrow": "Capabilities",
-    "title": "One partner, the entire digital stack",
-    "items": {
-      "ai": {
-        "title": "AI & Automation",
-        "desc": "NLP chatbots, AI training, and AI-driven workflow automation for businesses and NGOs."
-      },
-      "seo": {
-        "title": "SEO & Growth",
-        "desc": "Search engine optimization and measurable digital growth strategy."
-      },
-      "cloud": {
-        "title": "Cloud & Architecture",
-        "desc": "AWS, GCP, ServerAvatar — stable, scale-ready system architecture."
-      },
-      "security": {
-        "title": "Security",
-        "desc": "Encryption, security audits, and penetration testing."
-      },
-      "integration": {
-        "title": "API Integration",
-        "desc": "WhatsApp API, payment gateways, and third-party login systems."
-      },
-      "analytics": {
-        "title": "Analytics",
-        "desc": "Google Analytics and Meta Pixel for data-driven decisions."
-      }
-    }
-  },
   "FeaturedCaseStudies": {
     "eyebrow": "Featured Case Studies",
     "title": "Real problems, verified solutions",
@@ -175,12 +228,6 @@
       }
     }
   },
-  "ClosingCta": {
-    "title": "Let's Build Something.",
-    "desc": "Planning a digital project, an AI implementation need, or a digital transformation plan? Let's discuss your needs and the right solution.",
-    "ctaPrimary": "Book Consultation",
-    "ctaSecondary": "Chat via WhatsApp"
-  },
   "WorkPage": {
     "eyebrow": "Work",
     "title": "All Projects",
@@ -206,19 +253,95 @@
     "title": "Bani Risset",
     "subtitle": "Digital & AI Consultant",
     "experienceLabel": "since 2008",
-    "bio": "Digital & AI Strategist with experience since 2008 building and growing digital systems for businesses and NGOs across Indonesia, Thailand, Australia, and Singapore. Experience spans websites, SEO, LMS, WhatsApp automation, digital marketing, through to AI strategy, tools, and implementation. Has experience in health and advocacy through various NGOs, and is a co-founder of 3 businesses and startups.",
-    "certificationsTitle": "Certifications",
+    "bio": [
+      "Starting from website and digital system development, work experience grew into digital transformation, automation, knowledge management, and AI.",
+      "Over more than 18 years, projects have been carried out for government, NGOs, companies, and organizations with a wide range of digital needs. That experience spans system development, digital marketing, information management, and the implementation of new technology.",
+      "Experience in technology has also run alongside work in health, advocacy, and civil society organizations. That combination helps in seeing digital needs not just from the technology side, but also from work processes and organizational needs."
+    ],
+    "bioP4Prefix": "Today, the main focus is on ",
+    "bioP4Strong": "AI strategy, automation, digital transformation, and digital system development",
+    "bioP4Suffix": ".",
     "achievementsTitle": "Experience & Achievements",
-    "achievements": {
-      "adsense": "18+ years of experience in digital, technology, and information systems",
-      "kemenkes": "Built a Digital AIDS Application adopted by Indonesia's Ministry of Health",
-      "mdgAward": "Won the MDG Award for Health Innovation using Social Media",
-      "ngo": "Built websites, LMS platforms, apps, and digital systems for government, NGOs, corporations, and SMEs",
-      "systems": "Experienced in digital marketing, social media, AI, automation, and knowledge management",
-      "certified": "Officially certified by Google, Meta, and AI"
+    "achievements": [
+      {
+        "title": "18+ years in digital",
+        "desc": "Experience spans information systems, websites, digital marketing, knowledge management, and technology implementation."
+      },
+      {
+        "title": "Digital AIDS Application",
+        "desc": "Developed a health application later adopted by Indonesia's Ministry of Health."
+      },
+      {
+        "title": "Across sectors and needs",
+        "desc": "Experienced handling digital needs for government, NGOs, companies, advocacy networks, and small businesses."
+      },
+      {
+        "title": "Digital systems and platforms",
+        "desc": "Built websites, LMS, digital repositories, web applications, voting systems, and various custom web solutions."
+      },
+      {
+        "title": "AI and automation",
+        "desc": "Developed AI automation solutions, chatbots, and AI training material for organizations and businesses."
+      },
+      {
+        "title": "Certifications and skills development",
+        "desc": "Holds certifications and training from Google, Meta, and various AI skills development programs."
+      }
+    ],
+    "howIWork": {
+      "eyebrow": "How I Work",
+      "heading": "Start from the problem that needs solving.",
+      "body": [
+        "Technology isn't always the first answer.",
+        "In many projects, the real issue is the work process, the flow of information, disconnected systems, or how a team uses technology.",
+        "That's why the need is understood first.",
+        "The solution might be a process fix, a new system, automation, integration, or the use of AI.",
+        "Technology is chosen once the problem is clear enough."
+      ]
+    },
+    "relevantExperience": {
+      "title": "Relevant Experience",
+      "entries": [
+        {
+          "name": "Teras Digital Tech",
+          "body": [
+            "Since 2008, the work has covered digital transformation and information system development for clients in government, NGOs, and the private sector.",
+            "Development includes AI automation, LMS, digital repositories, custom web development, and various digital systems for organizations and businesses."
+          ]
+        },
+        {
+          "name": "WHRIN — Women and Harm Reduction International Network",
+          "body": [
+            "Developed and managed the website for a global advocacy network for women and harm reduction. The work also included a major website rebuild and migration in 2019, plus cross-country communication and documentation needs."
+          ]
+        },
+        {
+          "name": "Digital AIDS Application",
+          "body": [
+            "One of the projects that became an important part of the digital systems journey is the Digital AIDS Application in 2013.",
+            "The application was later officially adopted by Indonesia's Ministry of Health. This project was also presented at an international conference in Bangkok in 2013."
+          ]
+        }
+      ],
+      "closing": "That experience is part of a journey from technology development toward work that combines strategy, systems, and organizational needs."
     },
     "testimonials": {
-      "title": "What Clients Say"
+      "title": "What Clients Say",
+      "lead": "Work is better explained by results and client experience."
+    },
+    "closingCta": {
+      "heading": "Time to Talk About Your Needs",
+      "body": [
+        "Have a digital project, an automation need, or are you looking for the right way to start using AI?",
+        "Share the context and the problem you're facing.",
+        "We can look at whether it's better solved through strategy, systems, automation, or a combination of approaches."
+      ],
+      "primary": "Book Consultation",
+      "consultLabel": "Initial consultation",
+      "consultValue": "30 minutes, free of charge",
+      "responseLabel": "Response",
+      "responseValue": "Usually the same business day",
+      "emailLabel": "Email"
     }
   },
   "ContactPage": {

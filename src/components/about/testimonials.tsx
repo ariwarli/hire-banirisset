@@ -64,7 +64,12 @@ export function Testimonials() {
 
   return (
     <section className="flex flex-col gap-7 px-[22px] py-10 md:px-11 md:pb-13">
-      <h2 className="text-[26px] leading-tight">{t("title")}</h2>
+      <div className="flex flex-col gap-3">
+        <h2 className="text-[26px] leading-tight">{t("title")}</h2>
+        <p className="max-w-[56ch] text-[16px] leading-[1.6] text-foreground/62 text-pretty">
+          {t("lead")}
+        </p>
+      </div>
 
       <figure className="m-0 flex max-w-[840px] flex-col gap-[18px] border-t-2 border-foreground pt-[22px]">
         <p className="font-mono text-xs tracking-[0.16em] text-accent-paper">{STARS}</p>

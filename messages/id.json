@@ -28,7 +28,6 @@
   },
   "Hero": {
     "name": "Bani Risset",
-    "tagline": "Building AI Systems, Automation & Digital Growth for Businesses and NGOs.",
     "ctaPrimary": "View Projects",
     "ctaSecondary": "Book Consultation",
     "eyebrow": "Konsultan Digital & AI Strategist",
@@ -40,6 +39,90 @@
         "✓ dijadwalkan ke 3 kanal",
         "selesai dalam 4.2 detik"
       ]
+    }
+  },
+  "HomePage": {
+    "hero": {
+      "h1": "AI Strategy, Automation & Digital Transformation for Businesses and NGOs",
+      "lead": "Membantu bisnis dan organisasi menemukan peluang teknologi, membangun sistem digital, dan menerapkan AI untuk kebutuhan yang nyata.",
+      "prompt": "Sedang merencanakan proyek digital, kebutuhan implementasi AI, atau transformasi digital?",
+      "cta": "Book Consultation",
+      "ctaSecondary": "Lihat Proyek"
+    },
+    "capabilities": {
+      "eyebrow": "Core Capabilities",
+      "items": [
+        {
+          "no": "01",
+          "title": "AI Strategy & Automation",
+          "body": [
+            "Mengidentifikasi peluang penggunaan AI dan mengubahnya menjadi automation, chatbot, knowledge system, atau workflow yang dapat digunakan."
+          ],
+          "tags": ["AI automation", "WhatsApp AI", "NLP chatbot", "Knowledge systems", "AI workflow"]
+        },
+        {
+          "no": "02",
+          "title": "Digital Transformation",
+          "body": [
+            "Menghubungkan kebutuhan organisasi dengan strategi, proses, dan teknologi yang tepat.",
+            "Mencakup digitalisasi proses, knowledge management, dokumentasi, dan pengembangan sistem informasi."
+          ]
+        },
+        {
+          "no": "03",
+          "title": "Custom Digital Systems",
+          "body": [
+            "Membangun website, LMS, repository, membership system, dan aplikasi web yang disesuaikan dengan kebutuhan organisasi.",
+            "Fokusnya bukan sekadar membuat sistem. Sistem harus sesuai dengan cara kerja dan tujuan pengguna."
+          ]
+        },
+        {
+          "no": "04",
+          "title": "Digital Visibility & Growth",
+          "body": [
+            "Membantu organisasi meningkatkan visibilitas dan menjangkau audiens melalui strategi digital yang relevan."
+          ],
+          "tags": ["SEO", "GEO/AEO", "Google Business Profile", "Social media", "Digital campaigns"]
+        },
+        {
+          "no": "05",
+          "title": "AI Training & Adoption",
+          "body": [
+            "Membantu individu dan tim memahami AI serta menggunakannya secara lebih efektif dalam pekerjaan.",
+            "Materi dapat mencakup AI productivity, workflow, knowledge management, dan pengembangan solusi berbasis AI."
+          ]
+        },
+        {
+          "no": "06",
+          "title": "Digital Architecture & Integration",
+          "body": [
+            "Menghubungkan berbagai sistem agar dapat bekerja sebagai satu ekosistem."
+          ],
+          "tags": ["API integration", "Payment gateway", "Authentication", "Analytics", "Cloud infrastructure"]
+        }
+      ]
+    },
+    "supportingPosition": {
+      "heading": "Technology is only useful when it solves the right problem.",
+      "body": [
+        "Pendekatan dimulai dari kebutuhan.",
+        "Kemudian proses, data, teknologi, dan implementasi disusun sesuai konteks organisasi."
+      ]
+    },
+    "closingCta": {
+      "heading": "Punya kebutuhan digital atau ingin mengeksplorasi penggunaan AI?",
+      "body": [
+        "Mari mulai dari masalahnya.",
+        "Kita bisa membahas kebutuhan, pilihan solusi, dan langkah implementasi yang paling masuk akal."
+      ],
+      "primary": "Book a Consultation",
+      "consultLabel": "Konsultasi awal",
+      "consultValue": "30 menit, tanpa biaya",
+      "responseLabel": "Respons",
+      "responseValue": "Biasanya di hari kerja yang sama",
+      "emailLabel": "Email",
+      "whatsappLabel": "WhatsApp",
+      "whatsappValue": "Chat langsung →"
     }
   },
   "SelectedProjects": {
@@ -109,36 +192,6 @@
       }
     ]
   },
-  "Capabilities": {
-    "eyebrow": "Capabilities",
-    "title": "Satu partner, seluruh stack digital",
-    "items": {
-      "ai": {
-        "title": "AI & Automation",
-        "desc": "NLP chatbot, AI trainer, dan otomasi alur kerja berbasis AI untuk bisnis dan NGO."
-      },
-      "seo": {
-        "title": "SEO & Growth",
-        "desc": "Search engine optimization dan strategi pertumbuhan digital yang terukur."
-      },
-      "cloud": {
-        "title": "Cloud & Architecture",
-        "desc": "AWS, GCP, ServerAvatar — arsitektur sistem yang stabil dan siap skala."
-      },
-      "security": {
-        "title": "Keamanan",
-        "desc": "Enkripsi, audit keamanan, dan penetration testing."
-      },
-      "integration": {
-        "title": "Integrasi API",
-        "desc": "API WhatsApp, payment gateway, dan sistem login pihak ketiga."
-      },
-      "analytics": {
-        "title": "Analitik",
-        "desc": "Google Analytics dan Meta Pixel untuk keputusan berbasis data."
-      }
-    }
-  },
   "FeaturedCaseStudies": {
     "eyebrow": "Featured Case Studies",
     "title": "Problem nyata, solusi terverifikasi",
@@ -175,12 +228,6 @@
       }
     }
   },
-  "ClosingCta": {
-    "title": "Let's Build Something.",
-    "desc": "Sedang merencanakan proyek digital, kebutuhan implementasi AI, atau rencana transformasi digital?\n\nMari kita diskusikan kebutuhan dan solusinya.",
-    "ctaPrimary": "Book Consultation",
-    "ctaSecondary": "Chat via WhatsApp"
-  },
   "WorkPage": {
     "eyebrow": "Work",
     "title": "Seluruh Proyek",
@@ -202,23 +249,99 @@
     "cta": "Diskusikan proyek serupa"
   },
   "AboutPage": {
-    "eyebrow": "About",
+    "eyebrow": "Tentang",
     "title": "Bani Risset",
     "subtitle": "Konsultan Digital & AI Strategist",
     "experienceLabel": "sejak 2008",
-    "bio": "Konsultan Digital & AI Strategist dengan pengalaman sejak 2008 dalam membangun dan mengembangkan sistem digital untuk bisnis dan NGO di Indonesia, Thailand, Australia, dan Singapura.\n\nPengalaman mencakup website, SEO, LMS, WhatsApp automation, digital marketing, hingga strategi, tools, dan implementasi AI.\n\nMemiliki pengalaman di bidang kesehatan dan advokasi melalui berbagai NGO, serta merupakan pendiri 3 perusahaan dan startup.",
-    "certificationsTitle": "Sertifikasi",
+    "bio": [
+      "Berawal dari pengembangan website dan sistem digital, pengalaman kerja berkembang ke digital transformation, automation, knowledge management, dan AI.",
+      "Selama lebih dari 18 tahun, berbagai proyek dikerjakan untuk pemerintah, NGO, perusahaan, dan organisasi dengan kebutuhan digital yang beragam. Pengalaman tersebut mencakup pengembangan sistem, digital marketing, pengelolaan informasi, hingga implementasi teknologi baru.",
+      "Pengalaman di bidang teknologi juga berjalan berdampingan dengan pekerjaan di sektor kesehatan, advokasi, dan organisasi masyarakat sipil. Kombinasi ini membantu melihat kebutuhan digital bukan hanya dari sisi teknologi, tetapi juga dari proses kerja dan kebutuhan organisasi."
+    ],
+    "bioP4Prefix": "Saat ini, fokus utama berada pada ",
+    "bioP4Strong": "AI strategy, automation, digital transformation, dan pengembangan sistem digital",
+    "bioP4Suffix": ".",
     "achievementsTitle": "Pengalaman & Pencapaian",
-    "achievements": {
-      "adsense": "18+ tahun berpengalaman di bidang digital, teknologi, dan sistem informasi",
-      "kemenkes": "Membangun Aplikasi AIDS Digital yang diadopsi Kementerian Kesehatan RI",
-      "mdgAward": "Meraih MDG Award untuk kategori Inovasi Kesehatan menggunakan Social Media",
-      "ngo": "Membangun website, LMS, aplikasi, dan sistem digital untuk pemerintah, NGO, korporasi, dan UMKM",
-      "systems": "Berpengalaman dalam digital marketing, social media, AI, automation, dan knowledge management",
-      "certified": "Memiliki sertifikasi resmi dari Google, Meta, dan bidang AI"
+    "achievements": [
+      {
+        "title": "18+ tahun di bidang digital",
+        "desc": "Pengalaman mencakup sistem informasi, website, digital marketing, knowledge management, dan implementasi teknologi."
+      },
+      {
+        "title": "Aplikasi AIDS Digital",
+        "desc": "Mengembangkan aplikasi kesehatan yang kemudian diadopsi Kementerian Kesehatan RI."
+      },
+      {
+        "title": "Lintas sektor dan kebutuhan",
+        "desc": "Berpengalaman mengerjakan kebutuhan digital untuk pemerintah, NGO, perusahaan, jaringan advokasi, dan UMKM."
+      },
+      {
+        "title": "Sistem digital dan platform",
+        "desc": "Membangun website, LMS, repository digital, aplikasi web, sistem voting, dan berbagai custom web solution."
+      },
+      {
+        "title": "AI dan automation",
+        "desc": "Mengembangkan solusi AI automation, chatbot, serta materi dan pelatihan AI untuk kebutuhan organisasi dan bisnis."
+      },
+      {
+        "title": "Sertifikasi dan pengembangan kompetensi",
+        "desc": "Memiliki sertifikasi dan pelatihan dari Google, Meta, serta berbagai program pengembangan kompetensi AI."
+      }
+    ],
+    "howIWork": {
+      "eyebrow": "Cara Kerja",
+      "heading": "Mulai dari persoalan yang ingin diselesaikan.",
+      "body": [
+        "Teknologi bukan selalu jawaban pertama.",
+        "Dalam banyak proyek, persoalannya justru berada pada proses kerja, alur informasi, sistem yang terpisah, atau cara tim menggunakan teknologi.",
+        "Karena itu, kebutuhan dipahami terlebih dahulu.",
+        "Solusinya bisa berupa perbaikan proses, sistem baru, automation, integrasi, atau penggunaan AI.",
+        "Teknologi dipilih setelah masalahnya cukup jelas."
+      ]
+    },
+    "relevantExperience": {
+      "title": "Pengalaman yang Relevan",
+      "entries": [
+        {
+          "name": "Teras Digital Tech",
+          "body": [
+            "Sejak 2008, pekerjaan mencakup transformasi digital dan pengembangan sistem informasi untuk klien dari sektor pemerintah, NGO, dan swasta.",
+            "Pengembangan meliputi AI automation, LMS, repository digital, custom web development, serta berbagai sistem digital untuk kebutuhan organisasi dan bisnis."
+          ]
+        },
+        {
+          "name": "WHRIN — Women and Harm Reduction International Network",
+          "body": [
+            "Mengembangkan dan mengelola website untuk jaringan advokasi global perempuan dan harm reduction. Pekerjaan juga mencakup rebuild dan migrasi besar website pada 2019 serta kebutuhan komunikasi dan dokumentasi lintas negara."
+          ]
+        },
+        {
+          "name": "Aplikasi AIDS Digital",
+          "body": [
+            "Salah satu proyek yang menjadi bagian penting dari perjalanan pengembangan sistem digital adalah Aplikasi AIDS Digital pada 2013.",
+            "Aplikasi tersebut kemudian diadopsi secara resmi oleh Kementerian Kesehatan RI. Proyek ini juga dipresentasikan pada konferensi internasional di Bangkok pada 2013."
+          ]
+        }
+      ],
+      "closing": "Pengalaman tersebut menjadi bagian dari perjalanan dari pengembangan teknologi menuju pekerjaan yang menggabungkan strategi, sistem, dan kebutuhan organisasi."
     },
     "testimonials": {
-      "title": "Apa Kata Klien"
+      "title": "Apa Kata Klien",
+      "lead": "Pengalaman kerja lebih baik dijelaskan oleh hasil dan pengalaman klien."
+    },
+    "closingCta": {
+      "heading": "Saatnya Membahas Kebutuhan Anda",
+      "body": [
+        "Punya proyek digital, kebutuhan automation, atau sedang mencari cara yang tepat untuk mulai menggunakan AI?",
+        "Kirimkan konteks dan masalah yang sedang dihadapi.",
+        "Kita bisa melihat apakah kebutuhannya lebih tepat diselesaikan melalui strategi, sistem, automation, atau kombinasi beberapa pendekatan."
+      ],
+      "primary": "Book Consultation",
+      "consultLabel": "Konsultasi awal",
+      "consultValue": "30 menit, tanpa biaya",
+      "responseLabel": "Respons",
+      "responseValue": "Biasanya di hari kerja yang sama",
+      "emailLabel": "Email"
     }
   },
   "ContactPage": {
