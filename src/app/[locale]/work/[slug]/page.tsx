@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { CaseStudyFigure } from "@/components/case-study-figure";
+import { SiteFooter } from "@/components/layout/site-footer";
 import {
   getAllCaseStudies,
   getCaseStudyBySlug,
@@ -67,7 +68,18 @@ export default async function CaseStudyPage({
 
   const t = await getTranslations("CaseStudy");
   const nav = await getTranslations("Nav");
+  const footer = await getTranslations("Footer");
   const { intro, sections } = splitSections(cs.content);
+
+  const allCaseStudies = getAllCaseStudies(locale);
+  const currentIndex = allCaseStudies.findIndex((item) => item.slug === slug);
+  const next =
+    allCaseStudies.length > 1
+      ? allCaseStudies[(currentIndex + 1) % allCaseStudies.length]
+      : null;
+  const pointer = next
+    ? { label: `${footer("nextCaseStudy")} — ${next.title}`, href: `/work/${next.slug}` }
+    : undefined;
 
   const meta = [
     { label: t("client"), value: cs.client },
@@ -190,6 +202,8 @@ export default async function CaseStudyPage({
           {nav("bookConsultation")}
         </Link>
       </div>
+
+      <SiteFooter pointer={pointer} />
     </>
   );
 }
