@@ -47,12 +47,14 @@ export function SiteFooter({ variant = "default", pointer }: SiteFooterProps) {
               <p className="text-[15px] leading-[1.65] text-paper/62">{t("ctaDesc")}</p>
 
               <div className="flex flex-col gap-2.5 pt-2">
-                <Link
-                  href="/contact"
+                <a
+                  href={CONTACT.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded bg-accent-base px-6 py-[17px] text-center text-[15px] font-medium text-accent-on transition-opacity hover:opacity-90"
                 >
                   {t("ctaPrimary")}
-                </Link>
+                </a>
                 <a
                   href={whatsappHref}
                   target="_blank"

@@ -12,7 +12,7 @@ export function ClosingConsult() {
       heading={t("heading")}
       headingMaxWidthCh={24}
       body={t.raw("body") as string[]}
-      primary={{ label: t("primary"), href: "/contact" }}
+      primary={{ label: t("primary"), href: CONTACT.bookingUrl }}
       rows={[
         { label: t("consultLabel"), value: t("consultValue") },
         { label: t("responseLabel"), value: t("responseValue") },

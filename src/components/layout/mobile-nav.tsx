@@ -84,13 +84,15 @@ export function MobileNav({
             >
               {"WhatsApp"}
             </a>
-            <Link
-              href="/contact"
+            <a
+              href={CONTACT.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="rounded bg-accent-base px-5 py-4 text-center text-sm font-medium text-accent-on"
             >
               {t("bookConsultation")}
-            </Link>
+            </a>
           </div>
         </SheetContent>
       </Sheet>

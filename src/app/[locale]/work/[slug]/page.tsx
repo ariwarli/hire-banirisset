@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { CONTACT } from "@/lib/constants";
 import { CaseStudyFigure } from "@/components/case-study-figure";
 import { CaseStudyImages } from "@/components/work/case-study-images";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -224,12 +225,14 @@ export default async function CaseStudyPage({
 
       <div className="hairline-t flex flex-wrap items-center justify-between gap-7 px-[22px] py-9 md:px-11">
         <p className="font-display text-[22px] leading-snug">{t("cta")}</p>
-        <Link
-          href="/contact"
+        <a
+          href={CONTACT.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded bg-ink px-[26px] py-4 text-sm font-medium text-paper transition-opacity hover:opacity-90"
         >
           {nav("bookConsultation")}
-        </Link>
+        </a>
       </div>
 
       <SiteFooter pointer={pointer} />

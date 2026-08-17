@@ -1,4 +1,3 @@
-import { Link } from "@/i18n/navigation";
 import { AvailableBadge } from "@/components/available-badge";
 
 interface CtaRow {
@@ -94,12 +93,14 @@ export function CtaPanel({
             <CtaRows rows={rows} labelColClass="grid-cols-[118px_minmax(0,1fr)]" />
           ) : null}
           <AvailableBadge surface="paper" />
-          <Link
+          <a
             href={primary.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded bg-accent-base px-6 py-[15px] text-center text-[15px] font-medium text-accent-on transition-opacity hover:opacity-90"
           >
             {primary.label}
-          </Link>
+          </a>
           {whatsapp ? (
             <a
               href={whatsapp.href}
@@ -112,12 +113,14 @@ export function CtaPanel({
           ) : null}
         </div>
 
-        <Link
+        <a
           href={primary.href}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden w-fit rounded bg-accent-base px-6 py-3.5 text-[14.5px] font-medium text-accent-on transition-opacity hover:opacity-90 lg:inline-flex"
         >
           {primary.label}
-        </Link>
+        </a>
       </div>
 
       <div className="mt-8 hidden flex-col gap-6 lg:mt-0 lg:flex">

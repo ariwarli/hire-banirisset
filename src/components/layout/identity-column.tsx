@@ -61,12 +61,14 @@ export function IdentityColumn() {
       </div>
 
       <div className="flex flex-col gap-3">
-        <Link
-          href="/contact"
+        <a
+          href={CONTACT.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded bg-accent-base px-6 py-4 text-center text-sm font-medium text-accent-on transition-opacity hover:opacity-90"
         >
           {t("bookConsultation")}
-        </Link>
+        </a>
         <a
           href={CONTACT.whatsappUrl}
           target="_blank"

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { CONTACT } from "@/lib/constants";
 
 export function Hero() {
   const t = useTranslations("HomePage.hero");
@@ -16,12 +17,14 @@ export function Hero() {
         {t("prompt")}
       </p>
       <div className="mt-7 flex flex-col gap-2.5 md:flex-row md:gap-3">
-        <Link
-          href="/contact"
+        <a
+          href={CONTACT.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded bg-accent-base px-6 py-[15px] text-center text-[15px] font-medium text-accent-on transition-opacity hover:opacity-90 md:w-fit md:py-3.5 md:text-[14.5px]"
         >
           {t("cta")}
-        </Link>
+        </a>
         <Link
           href="/work"
           className="rounded border border-border px-6 py-[15px] text-center text-[15px] font-medium transition-colors hover:border-foreground/40 md:w-fit md:py-3.5 md:text-[14.5px]"
