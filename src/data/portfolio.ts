@@ -80,6 +80,15 @@ const websiteApp: PortfolioItem[] = [
     metric: 'Pengembangan & pemeliharaan website',
     metricEn: 'Website development & maintenance',
   },
+  {
+    client: 'LBH APIK Jakarta',
+    category: 'website-app',
+    year: '2023',
+    metric: 'Aplikasi Pelaporan Online',
+    metricEn: 'Online Reporting Application',
+    featured: true,
+    slug: 'lbh-apik-jakarta',
+  },
   // [KONFIRMASI BANI] — tambah project website lain di sini
   // Contoh format:
   // {
