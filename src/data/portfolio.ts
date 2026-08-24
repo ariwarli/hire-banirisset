@@ -79,6 +79,8 @@ const websiteApp: PortfolioItem[] = [
     year: '2012–sekarang',
     metric: 'Pengembangan & pemeliharaan website',
     metricEn: 'Website development & maintenance',
+    featured: true,
+    slug: 'babyjimaditya',
   },
   {
     client: 'LBH APIK Jakarta',
