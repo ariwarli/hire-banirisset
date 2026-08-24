@@ -91,6 +91,15 @@ const websiteApp: PortfolioItem[] = [
     featured: true,
     slug: 'lbh-apik-jakarta',
   },
+  {
+    client: 'GueTau.com',
+    category: 'website-app',
+    year: '2009–2010',
+    metric: 'Portal informasi kesehatan untuk anak muda',
+    metricEn: 'Health information portal for young readers',
+    featured: true,
+    slug: 'guetau',
+  },
   // [KONFIRMASI BANI] — tambah project website lain di sini
   // Contoh format:
   // {
