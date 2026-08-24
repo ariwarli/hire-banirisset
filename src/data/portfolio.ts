@@ -100,6 +100,15 @@ const websiteApp: PortfolioItem[] = [
     featured: true,
     slug: 'guetau',
   },
+  {
+    client: 'Rumah Cemara',
+    category: 'website-app',
+    year: '2010',
+    metric: 'Website organisasi nonprofit kesehatan & inklusi sosial',
+    metricEn: 'Health & social-inclusion nonprofit organization website',
+    featured: true,
+    slug: 'rumah-cemara',
+  },
   // [KONFIRMASI BANI] — tambah project website lain di sini
   // Contoh format:
   // {
