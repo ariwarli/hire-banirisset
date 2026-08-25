@@ -2,6 +2,13 @@
 
 Riwayat perubahan konten & fitur di hire.banirisset.com. Terbaru di atas.
 
+## 2026-08-24
+
+- **Case study Baby Jim Aditya** — `src/content/work/{id,en}/babyjimaditya.mdx`: halaman `/work/babyjimaditya` baru (personal branding website, 2012–sekarang); entry `portfolio.ts` ditandai `featured: true` + `slug`; gambar mockup homepage dipasang di section Solution. Commit `9c412eb`.
+- **Case study GueTau.com** — `src/content/work/{id,en}/guetau.mdx`: halaman `/work/guetau` baru (portal informasi kesehatan untuk anak muda, 2009–2010, situs sudah tidak beroperasi); entry baru di `portfolio.ts`. Commit `ad6fbe2`.
+- **Case study Rumah Cemara** — `src/content/work/{id,en}/rumah-cemara.mdx`: halaman `/work/rumah-cemara` baru (website organisasi nonprofit kesehatan & inklusi sosial, 2010); entry baru di `portfolio.ts`. **Perlu konfirmasi Bani**: brief menyebut tahun proyek "2010" tapi narasi sumber menyebut "Pada 2011" — field `year` sementara diisi 2010 mengikuti instruksi eksplisit. Commit `c8b27d4`.
+- Ketiganya sudah di-push ke `origin/main`.
+
 ## 2026-08-16
 
 - **Testimonials & footer** — `src/components/about/testimonials.tsx` (baru), `src/components/layout/site-footer.tsx` (baru): "collaborator gallery" di halaman About diganti jadi testimoni klien; footer situs ditambahkan (about, work, contact). `notable-collaborations.tsx` dihapus. Commit `4ac7bba`.
