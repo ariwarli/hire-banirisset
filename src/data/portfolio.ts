@@ -46,33 +46,38 @@ const websiteApp: PortfolioItem[] = [
   //   featured: true,
   //   slug: 'gwl-ina-voting',
   // },
-  {
-    client: 'siap.help',
-    category: 'website-app',
-    year: '2023',
-    metric: 'SaaS platform produktivitas berbasis AI',
-    metricEn: 'AI-based productivity SaaS platform',
-    featured: true,
-    slug: 'siap-help',
-  },
-  {
-    client: 'MunculDiGoogle',
-    category: 'website-app',
-    year: '2024',
-    metric: 'Platform SEO & visibilitas bisnis lokal',
-    metricEn: 'SEO & local business visibility platform',
-    featured: true,
-    slug: 'munculdigoogle',
-  },
-  {
-    client: 'SentraAI',
-    category: 'website-app',
-    year: '2024',
-    metric: 'Platform AI untuk UMKM Indonesia',
-    metricEn: 'AI platform for Indonesian SMEs',
-    featured: true,
-    slug: 'sentraai',
-  },
+  // Hidden 2026-09-04 — 3 case study berikut masih tampil placeholder
+  // literal "[KONFIRMASI BANI]" di production (lihat HANDOVER-office-hours-
+  // distribusi-kredibilitas.md, Blocker #1). Restore per-entry begitu data
+  // asli (year + outcome konkret) sudah dikonfirmasi Bani, dengan
+  // uncomment entry-nya dan rename .mdx.hidden -> .mdx di src/content/work/{id,en}/.
+  // {
+  //   client: 'siap.help',
+  //   category: 'website-app',
+  //   year: '2023',
+  //   metric: 'SaaS platform produktivitas berbasis AI',
+  //   metricEn: 'AI-based productivity SaaS platform',
+  //   featured: true,
+  //   slug: 'siap-help',
+  // },
+  // {
+  //   client: 'MunculDiGoogle',
+  //   category: 'website-app',
+  //   year: '2024',
+  //   metric: 'Platform SEO & visibilitas bisnis lokal',
+  //   metricEn: 'SEO & local business visibility platform',
+  //   featured: true,
+  //   slug: 'munculdigoogle',
+  // },
+  // {
+  //   client: 'SentraAI',
+  //   category: 'website-app',
+  //   year: '2024',
+  //   metric: 'Platform AI untuk UMKM Indonesia',
+  //   metricEn: 'AI platform for Indonesian SMEs',
+  //   featured: true,
+  //   slug: 'sentraai',
+  // },
   {
     client: 'Baby Jim Aditya',
     category: 'website-app',
